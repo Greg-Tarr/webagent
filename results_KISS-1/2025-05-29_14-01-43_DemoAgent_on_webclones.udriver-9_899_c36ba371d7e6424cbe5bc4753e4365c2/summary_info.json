@@ -1,0 +1,140 @@
+{
+    "task_name": "webclones.udriver-9",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.udriver-9_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 23,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.udriver-9_899",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "display_time_msg_cancel_booked_trip": 4000,
+                "display_time_preparing_opts_delay": 2500,
+                "hide_aria_labels": true,
+                "error_finding_driver": false,
+                "error_booking_ride": false,
+                "latency": 0,
+                "location_preset": 1,
+                "simulating_booking_trip": 5000,
+                "simulating_duration_ride": 30000,
+                "simulating_searching_driver_delay": 7000,
+                "cars": {
+                    "UdriverX": {
+                        "multiplier": 1,
+                        "discount": 0.05
+                    },
+                    "Comfort": {
+                        "multiplier": 1.25,
+                        "discount": 0.1
+                    },
+                    "UdriverXL": {
+                        "multiplier": 1.15,
+                        "discount": 0.15
+                    }
+                },
+                "run_id": "KISS-1",
+                "task_id": "udriver-9",
+                "removePopup": false
+            },
+            "differences": {
+                "currentTrips": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                },
+                "bookedTrips": {
+                    "added": {
+                        "0": {
+                            "pickup": {
+                                "id": 63,
+                                "basePrice": 5,
+                                "identifier": "UDD",
+                                "name": "Phat Thai",
+                                "formattedAddress": "2380 Lombard St, San Francisco, CA 94123, USA",
+                                "address": "2380 Lombard St, San Francisco, CA 94123, USA",
+                                "addressComponents": {
+                                    "street": "2380 Lombard Street",
+                                    "city": "San Francisco",
+                                    "state": "CA",
+                                    "zipCode": "94123",
+                                    "country": "US"
+                                }
+                            },
+                            "destination": {
+                                "id": 733,
+                                "basePrice": 15,
+                                "identifier": "DLO",
+                                "name": "333 Fremont Apartments",
+                                "formattedAddress": "333 Fremont St, San Francisco, CA 94105, USA",
+                                "address": "333 Fremont St, San Francisco, CA 94105, USA",
+                                "addressComponents": {
+                                    "street": "333 Fremont Street",
+                                    "city": "San Francisco",
+                                    "state": "CA",
+                                    "zipCode": "94105",
+                                    "country": "US"
+                                }
+                            },
+                            "car": {
+                                "type": "UdriverX",
+                                "image": "https://d1a3f4spazzrp4.cloudfront.net/car-types/haloProductImages/v1.1/Select_v1.png",
+                                "seats": 4,
+                                "time": "1 min away - 1:39 PM",
+                                "description": "Affordable rides, all to yourself",
+                                "multiplier": 1,
+                                "discount": 0.05,
+                                "finalPrice": 19,
+                                "priceWithoutDiscount": 20
+                            },
+                            "date": "7/18/2024",
+                            "time": "02:00 PM",
+                            "status": "pending"
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 24,
+    "stats.cum_n_token_goal": 736,
+    "stats.max_n_token_goal": 32,
+    "stats.cum_n_token_url": 322,
+    "stats.max_n_token_url": 18,
+    "stats.cum_n_token_focused_element_bid": 23,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 155,
+    "stats.max_n_token_last_action": 14,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 367436,
+    "stats.max_n_token_dom_txt": 30925,
+    "stats.cum_n_token_axtree_txt": 28627,
+    "stats.max_n_token_axtree_txt": 2644,
+    "stats.cum_n_token_pruned_html": 170000,
+    "stats.max_n_token_pruned_html": 21684,
+    "stats.cum_n_token_agent_messages": 180987,
+    "stats.max_n_token_agent_messages": 13927,
+    "stats.cum_step_elapsed": 50.49818301200867,
+    "stats.max_step_elapsed": 6.334993124008179,
+    "stats.cum_agent_elapsed": 174.6004650592804,
+    "stats.max_agent_elapsed": 17.1314480304718,
+    "terminated": true,
+    "truncated": false
+}

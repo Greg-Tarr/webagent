@@ -1,0 +1,97 @@
+{
+    "task_name": "webclones.opendining-5",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.opendining-5_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 15,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.opendining-5_875",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {
+                    "0": {
+                        "restaurant": {
+                            "id": "4be91a74-c7ff-4673-b60a-2c83d53a3052",
+                            "name": "Ocean Breeze",
+                            "description": "A serene seafood restaurant with stunning bay views.",
+                            "rating": "4.47",
+                            "price_range": "$10 to $20",
+                            "food_type": "Seafood",
+                            "adjectives": [
+                                "scenic",
+                                "relaxing",
+                                "fresh"
+                            ]
+                        },
+                        "date": "2024-07-18T04:00:00.000Z",
+                        "time": "2:00 PM",
+                        "guests": "2 people",
+                        "tel": "+1 418 543 8090",
+                        "optionals": {
+                            "occasion": "Date night",
+                            "request": "Please provide a table with a nice view if available."
+                        }
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "reviewDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "open_dining": {
+                    "latency": 0,
+                    "hide_aria_labels": false,
+                    "error_booking": false,
+                    "no_available_slots": false,
+                    "run_id": "KISS-1",
+                    "task_id": "opendining-5",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 16,
+    "stats.cum_n_token_goal": 690,
+    "stats.max_n_token_goal": 46,
+    "stats.cum_n_token_url": 701,
+    "stats.max_n_token_url": 78,
+    "stats.cum_n_token_focused_element_bid": 21,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 126,
+    "stats.max_n_token_last_action": 20,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 1941327,
+    "stats.max_n_token_dom_txt": 214858,
+    "stats.cum_n_token_axtree_txt": 80789,
+    "stats.max_n_token_axtree_txt": 10942,
+    "stats.cum_n_token_pruned_html": 1179813,
+    "stats.max_n_token_pruned_html": 162227,
+    "stats.cum_n_token_agent_messages": 188550,
+    "stats.max_n_token_agent_messages": 24299,
+    "stats.cum_step_elapsed": 32.98906207084656,
+    "stats.max_step_elapsed": 7.415987968444824,
+    "stats.cum_agent_elapsed": 126.45126795768738,
+    "stats.max_agent_elapsed": 12.749330997467041,
+    "terminated": true,
+    "truncated": false
+}

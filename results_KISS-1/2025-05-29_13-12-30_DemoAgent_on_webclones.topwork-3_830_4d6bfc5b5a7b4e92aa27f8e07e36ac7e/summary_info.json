@@ -1,0 +1,90 @@
+{
+    "task_name": "webclones.topwork-3",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.topwork-3_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 26,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.topwork-3_830",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "messagesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "offersDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "jobsDiff": {
+                "added": {
+                    "0": {
+                        "id": "1748538979238",
+                        "title": "Full-Stack Developer - Java/Spring Boot/Angular for Enterprise Microservices Architecture",
+                        "skills": [
+                            "Java",
+                            "Spring Boot",
+                            "Angular",
+                            "MySQL",
+                            "Docker",
+                            "Kubernetes",
+                            "Jenkins"
+                        ],
+                        "estimateSize": "large",
+                        "estimateTime": "More than 6 months",
+                        "estimateLevelExperience": "expert",
+                        "estimateHireOpportunity": "yes",
+                        "hourlyRateFrom": 75,
+                        "hourlyRateTo": 120,
+                        "fixedPrice": 0,
+                        "description": "We are seeking an expert Full-Stack Developer to join our enterprise-level microservices project. This is a complex, large-scale initiative requiring deep expertise in modern development technologies and enterprise architecture patterns.\n\n**Project Overview:**\nYou'll be working on building and enhancing scalable microservices architecture for enterprise applications. This is a long-term project (6+ months) that involves designing, developing, and deploying robust, high-performance solutions that can handle enterprise-scale traffic and data processing.\n\n**Required Technical Skills:**\n\u2022 Java - Expert level proficiency\n\u2022 Spring Boot - Advanced microservices development\n\u2022 Angular - Modern frontend development\n\u2022 MySQL - Database design and optimization\n\u2022 Docker - Containerization and deployment\n\u2022 Kubernetes - Container orchestration and management\n\u2022 Jenkins - CI/CD pipeline development and automation\n\n**What We're Looking For:**\n\u2022 Proven experience in enterprise-level application development\n\u2022 Strong background in building scalable microservices architectures\n\u2022 Deep understanding of distributed systems and cloud-native technologies\n\u2022 Experience with DevOps practices and automated deployment pipelines\n\u2022 Ability to work independently and deliver high-quality solutions\n\u2022 Strong communication skills for collaborative development\n\n**Project Scope:**\nThis is a large-scale project involving multiple interconnected microservices, complex business logic, and integration with various enterprise systems. You'll be responsible for both backend API development and frontend user interface implementation.\n\n**Contract Details:**\nThis position offers potential for conversion to full-time employment after successful completion of the initial contract period.\n\nIf you have the expertise we're looking for and are passionate about enterprise-scale development, we'd love to hear from you!",
+                        "createdAt": "2025-05-29T17:16:19.238Z"
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 27,
+    "stats.cum_n_token_goal": 1924,
+    "stats.max_n_token_goal": 74,
+    "stats.cum_n_token_url": 336,
+    "stats.max_n_token_url": 13,
+    "stats.cum_n_token_focused_element_bid": 26,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 533,
+    "stats.max_n_token_last_action": 342,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 435820,
+    "stats.max_n_token_dom_txt": 37376,
+    "stats.cum_n_token_axtree_txt": 22961,
+    "stats.max_n_token_axtree_txt": 3156,
+    "stats.cum_n_token_pruned_html": 316956,
+    "stats.max_n_token_pruned_html": 32809,
+    "stats.cum_n_token_agent_messages": 163383,
+    "stats.max_n_token_agent_messages": 11749,
+    "stats.cum_step_elapsed": 50.490036725997925,
+    "stats.max_step_elapsed": 8.044894933700562,
+    "stats.cum_agent_elapsed": 199.03978776931763,
+    "stats.max_agent_elapsed": 19.38390302658081,
+    "terminated": true,
+    "truncated": false
+}

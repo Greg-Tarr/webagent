@@ -1,0 +1,99 @@
+{
+    "task_name": "webclones.staynb-1",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.staynb-1_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 40,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.staynb-1_667",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {
+                    "0": {
+                        "stay": {
+                            "index": "0",
+                            "title": "Cabin in the woods",
+                            "city": "Asheville",
+                            "country": "USA",
+                            "price": 127,
+                            "averageRating": "4.00",
+                            "host": "Alexa Richardson"
+                        },
+                        "checkin": "Mon Jul 01 2024 13:00:00 GMT-0400 (Eastern Daylight Time)",
+                        "checkout": "Tue Jul 16 2024 13:00:00 GMT-0400 (Eastern Daylight Time)",
+                        "guests": "1 Guest",
+                        "pay_when": "pay-now",
+                        "card_details": {
+                            "card_number": "4532015112830366",
+                            "expiration": "12 / 26",
+                            "cvv": "123",
+                            "zipcode": "02351",
+                            "country": "United States"
+                        },
+                        "messageToHost": ""
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "recentSearchesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "staynb": {
+                    "no_vacancy": false,
+                    "price_multiplier": 1,
+                    "hide_aria_labels": false,
+                    "service_unavailable": false,
+                    "error_making_reservation": false,
+                    "latency": 200,
+                    "run_id": "",
+                    "task_id": "",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 41,
+    "stats.cum_n_token_goal": 760,
+    "stats.max_n_token_goal": 19,
+    "stats.cum_n_token_url": 2216,
+    "stats.max_n_token_url": 145,
+    "stats.cum_n_token_focused_element_bid": 44,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 366,
+    "stats.max_n_token_last_action": 91,
+    "stats.cum_n_token_last_action_error": 1188,
+    "stats.max_n_token_last_action_error": 460,
+    "stats.cum_n_token_dom_txt": 3931797,
+    "stats.max_n_token_dom_txt": 164918,
+    "stats.cum_n_token_axtree_txt": 705647,
+    "stats.max_n_token_axtree_txt": 32128,
+    "stats.cum_n_token_pruned_html": 3523474,
+    "stats.max_n_token_pruned_html": 157385,
+    "stats.cum_n_token_agent_messages": 1309971,
+    "stats.max_n_token_agent_messages": 67907,
+    "stats.cum_step_elapsed": 89.64720869064331,
+    "stats.max_step_elapsed": 8.764518022537231,
+    "stats.cum_agent_elapsed": 366.2502372264862,
+    "stats.max_agent_elapsed": 28.743257761001587,
+    "terminated": true,
+    "truncated": false
+}

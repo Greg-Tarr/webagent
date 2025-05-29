@@ -1,0 +1,68 @@
+{
+    "task_name": "webclones.gomail-6",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.gomail-6_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 4,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.gomail-6_443",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "email_account": "fede.lopez@gmail.com",
+                "hide_aria_labels": true,
+                "latency": 0,
+                "splash_screen_delay": 6000,
+                "run_id": "KISS-1",
+                "task_id": "gomail-6",
+                "removePopup": false
+            },
+            "differences": {
+                "emails": {
+                    "added": [],
+                    "deleted": [],
+                    "updated": []
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 5,
+    "stats.cum_n_token_goal": 100,
+    "stats.max_n_token_goal": 25,
+    "stats.cum_n_token_url": 44,
+    "stats.max_n_token_url": 11,
+    "stats.cum_n_token_focused_element_bid": 4,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 19,
+    "stats.max_n_token_last_action": 11,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 137127,
+    "stats.max_n_token_dom_txt": 43083,
+    "stats.cum_n_token_axtree_txt": 22192,
+    "stats.max_n_token_axtree_txt": 7434,
+    "stats.cum_n_token_pruned_html": 103037,
+    "stats.max_n_token_pruned_html": 34545,
+    "stats.cum_n_token_agent_messages": 26364,
+    "stats.max_n_token_agent_messages": 8842,
+    "stats.cum_step_elapsed": 10.572600841522217,
+    "stats.max_step_elapsed": 6.773800849914551,
+    "stats.cum_agent_elapsed": 64.85489177703857,
+    "stats.max_agent_elapsed": 24.428688764572144,
+    "terminated": true,
+    "truncated": false
+}

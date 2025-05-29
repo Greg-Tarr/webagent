@@ -1,0 +1,106 @@
+{
+    "task_name": "webclones.zilloft-3",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.zilloft-3_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 25,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.zilloft-3_195",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "hide_aria_labels": true,
+                "latency": 0,
+                "latency_response_search": 2000,
+                "run_id": "KISS-1",
+                "task_id": "zilloft-3",
+                "removePopup": false
+            },
+            "differences": {
+                "requestTours": {
+                    "added": {
+                        "0": {
+                            "id": "e53d619d-c069-42b3-beb3-83941d0715db",
+                            "requestTourData": {
+                                "options": [
+                                    {
+                                        "option": 1,
+                                        "date": "2024-07-18T04:00:00.000Z",
+                                        "time": "2:00 PM"
+                                    },
+                                    {
+                                        "option": 2,
+                                        "date": "2024-07-18T04:00:00.000Z",
+                                        "time": "9:00 AM"
+                                    }
+                                ],
+                                "formValues": {
+                                    "name": "John Doe",
+                                    "email": "johndoe@example.com",
+                                    "phone": "555-123-4567",
+                                    "message": "I am interested in 3340 Del Sol Blvd SPACE 77, San Diego, CA 92154.",
+                                    "wantFinancingInformation": true
+                                },
+                                "shareInfoDetails": {
+                                    "whenToBuy": "0-3 months",
+                                    "exclusiveAgencyAgreement": "No, I haven\u2019t signed with an agent."
+                                }
+                            }
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                },
+                "contactAgents": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                },
+                "savedHomes": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 26,
+    "stats.cum_n_token_goal": 1675,
+    "stats.max_n_token_goal": 67,
+    "stats.cum_n_token_url": 297,
+    "stats.max_n_token_url": 12,
+    "stats.cum_n_token_focused_element_bid": 43,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 196,
+    "stats.max_n_token_last_action": 16,
+    "stats.cum_n_token_last_action_error": 191,
+    "stats.max_n_token_last_action_error": 179,
+    "stats.cum_n_token_dom_txt": 1670869,
+    "stats.max_n_token_dom_txt": 205382,
+    "stats.cum_n_token_axtree_txt": 70546,
+    "stats.max_n_token_axtree_txt": 19177,
+    "stats.cum_n_token_pruned_html": 1483893,
+    "stats.max_n_token_pruned_html": 197889,
+    "stats.cum_n_token_agent_messages": 775143,
+    "stats.max_n_token_agent_messages": 92200,
+    "stats.cum_step_elapsed": 51.997817039489746,
+    "stats.max_step_elapsed": 6.698771238327026,
+    "stats.cum_agent_elapsed": 221.1515691280365,
+    "stats.max_agent_elapsed": 15.547922372817993,
+    "terminated": true,
+    "truncated": false
+}

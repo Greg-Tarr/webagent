@@ -5,6 +5,9 @@
 *.log
 *.temp
 *.tmp
+*.pkl
+*.gz
+
 .archive
 .venv
 .env
@@ -21,3 +24,5 @@ playwright
 .ropeproject
 results
 logs/
+
+!results_KISS-1/**/*.json

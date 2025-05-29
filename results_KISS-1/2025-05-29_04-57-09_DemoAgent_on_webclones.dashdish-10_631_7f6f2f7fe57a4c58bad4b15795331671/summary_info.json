@@ -1,0 +1,136 @@
+{
+    "task_name": "webclones.dashdish-10",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.dashdish-10_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 13,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.dashdish-10_631",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "hide_aria_labels": true,
+                "latency": 0,
+                "time_notification": 3000,
+                "estimated_tax": 0.67,
+                "run_id": "KISS-1",
+                "task_id": "dashdish-10",
+                "removePopup": false
+            },
+            "differences": {
+                "foodOrders": {
+                    "added": {
+                        "0": {
+                            "orderId": "ORD-1748509148185-919",
+                            "checkoutDetails": {
+                                "account": {
+                                    "email": "shaun.t.vanweelden@gmail.com"
+                                },
+                                "shipping": {
+                                    "shippingOption": "Delivery",
+                                    "time": "45-60",
+                                    "address": "710 Portofino Ln, Foster City, CA 94404, USA",
+                                    "phone": "(415) 861-2802",
+                                    "isGift": true,
+                                    "deliveryOption": "Standard",
+                                    "dropOffOption": "Leave it at my door",
+                                    "dropOffInstructions": "Please ring the bell and drop off at the door, thank you. Its around the corner on the ground floor"
+                                },
+                                "payment": {
+                                    "id": "1",
+                                    "type": "Visa",
+                                    "cardNumber": "4444111122225097",
+                                    "last4": "5097",
+                                    "expiry": "06/2025",
+                                    "color": "#1a73e8",
+                                    "label": "VISA"
+                                },
+                                "charges": {
+                                    "tip": 2,
+                                    "deliveryFee": 2.99,
+                                    "serviceFee": 3,
+                                    "estimatedTax": 0.67,
+                                    "totalAmount": 34.32
+                                }
+                            },
+                            "cartItems": [
+                                {
+                                    "id": "1",
+                                    "photoUrl": "https://images.pexels.com/photos/1260968/pexels-photo-1260968.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+                                    "name": "Classic Cheeseburger",
+                                    "price": "13.11",
+                                    "likePercentage": "70%",
+                                    "likeCount": "(25)",
+                                    "restaurantName": "Souvla",
+                                    "size": "Medium",
+                                    "quantity": 1,
+                                    "basePrice": 13.11,
+                                    "extraCost": 0.9,
+                                    "finalPrice": "14.01",
+                                    "uniqueIdentifier": "1-Medium-0.9"
+                                },
+                                {
+                                    "id": "2",
+                                    "photoUrl": "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+                                    "name": "Bacon Double Cheeseburger",
+                                    "price": "11.65",
+                                    "likePercentage": "92%",
+                                    "likeCount": "(36)",
+                                    "restaurantName": "Souvla",
+                                    "size": "Small",
+                                    "quantity": 1,
+                                    "basePrice": 11.65,
+                                    "extraCost": 0,
+                                    "finalPrice": "11.65",
+                                    "uniqueIdentifier": "2-Small-0"
+                                }
+                            ],
+                            "createdAt": "2025-05-29T08:59:08.185Z"
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 14,
+    "stats.cum_n_token_goal": 507,
+    "stats.max_n_token_goal": 39,
+    "stats.cum_n_token_url": 209,
+    "stats.max_n_token_url": 18,
+    "stats.cum_n_token_focused_element_bid": 13,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 73,
+    "stats.max_n_token_last_action": 7,
+    "stats.cum_n_token_last_action_error": 12,
+    "stats.max_n_token_last_action_error": 12,
+    "stats.cum_n_token_dom_txt": 1456837,
+    "stats.max_n_token_dom_txt": 1018009,
+    "stats.cum_n_token_axtree_txt": 48437,
+    "stats.max_n_token_axtree_txt": 26798,
+    "stats.cum_n_token_pruned_html": 1434044,
+    "stats.max_n_token_pruned_html": 1013770,
+    "stats.cum_n_token_agent_messages": 246576,
+    "stats.max_n_token_agent_messages": 36962,
+    "stats.cum_step_elapsed": 28.769609451293945,
+    "stats.max_step_elapsed": 6.740760087966919,
+    "stats.cum_agent_elapsed": 108.64098811149597,
+    "stats.max_agent_elapsed": 12.859200954437256,
+    "terminated": true,
+    "truncated": false
+}

@@ -1,0 +1,97 @@
+{
+    "task_name": "webclones.opendining-3",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.opendining-3_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 40,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.opendining-3_904",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {
+                    "0": {
+                        "restaurant": {
+                            "id": "e83c1c2b-9f5b-4a7c-bd54-b165a86a0f3d",
+                            "name": "The Royal Dine",
+                            "description": "An upscale dining establishment offering a lavish experience with gourmet cuisine and a majestic ambiance. Perfect for those seeking an elegant night out or a special celebration.",
+                            "rating": "4.02",
+                            "price_range": "$25 to $50",
+                            "food_type": "French",
+                            "adjectives": [
+                                "luxurious",
+                                "romantic",
+                                "elegant"
+                            ]
+                        },
+                        "date": "2024-07-20T04:00:00.000Z",
+                        "time": "7:00 PM",
+                        "guests": "4 people",
+                        "tel": "+1 418 543 8090",
+                        "optionals": {
+                            "occasion": "Date night",
+                            "request": ""
+                        }
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "reviewDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "open_dining": {
+                    "latency": 0,
+                    "hide_aria_labels": false,
+                    "error_booking": false,
+                    "no_available_slots": false,
+                    "run_id": "KISS-1",
+                    "task_id": "opendining-3",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 41,
+    "stats.cum_n_token_goal": 2000,
+    "stats.max_n_token_goal": 50,
+    "stats.cum_n_token_url": 2094,
+    "stats.max_n_token_url": 83,
+    "stats.cum_n_token_focused_element_bid": 46,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 430,
+    "stats.max_n_token_last_action": 87,
+    "stats.cum_n_token_last_action_error": 246,
+    "stats.max_n_token_last_action_error": 222,
+    "stats.cum_n_token_dom_txt": 4295910,
+    "stats.max_n_token_dom_txt": 220439,
+    "stats.cum_n_token_axtree_txt": 217149,
+    "stats.max_n_token_axtree_txt": 19215,
+    "stats.cum_n_token_pruned_html": 2925368,
+    "stats.max_n_token_pruned_html": 167087,
+    "stats.cum_n_token_agent_messages": 1052683,
+    "stats.max_n_token_agent_messages": 57646,
+    "stats.cum_step_elapsed": 77.16172051429749,
+    "stats.max_step_elapsed": 7.261461973190308,
+    "stats.cum_agent_elapsed": 337.3504447937012,
+    "stats.max_agent_elapsed": 16.151537895202637,
+    "terminated": true,
+    "truncated": false
+}

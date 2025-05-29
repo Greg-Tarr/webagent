@@ -1,0 +1,62 @@
+{
+    "task_name": "webclones.omnizon-1",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.omnizon-1_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 4,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.omnizon-1_674",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "orderDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "cartDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 5,
+    "stats.cum_n_token_goal": 76,
+    "stats.max_n_token_goal": 19,
+    "stats.cum_n_token_url": 52,
+    "stats.max_n_token_url": 16,
+    "stats.cum_n_token_focused_element_bid": 4,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 23,
+    "stats.max_n_token_last_action": 11,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 245743,
+    "stats.max_n_token_dom_txt": 71068,
+    "stats.cum_n_token_axtree_txt": 19649,
+    "stats.max_n_token_axtree_txt": 5815,
+    "stats.cum_n_token_pruned_html": 157941,
+    "stats.max_n_token_pruned_html": 49113,
+    "stats.cum_n_token_agent_messages": 35119,
+    "stats.max_n_token_agent_messages": 14706,
+    "stats.cum_step_elapsed": 13.08330225944519,
+    "stats.max_step_elapsed": 7.83195424079895,
+    "stats.cum_agent_elapsed": 40.38942837715149,
+    "stats.max_agent_elapsed": 21.038216829299927,
+    "terminated": true,
+    "truncated": false
+}

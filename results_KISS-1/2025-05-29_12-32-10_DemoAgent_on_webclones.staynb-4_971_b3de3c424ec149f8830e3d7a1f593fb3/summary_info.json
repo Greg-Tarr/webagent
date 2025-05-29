@@ -1,0 +1,99 @@
+{
+    "task_name": "webclones.staynb-4",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.staynb-4_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 25,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.staynb-4_971",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {
+                    "0": {
+                        "stay": {
+                            "index": "28",
+                            "title": "Countryside Haven",
+                            "city": "Cotswolds",
+                            "country": "UK",
+                            "price": 14,
+                            "averageRating": "4.46",
+                            "host": "Kevin Moore"
+                        },
+                        "checkin": "Sat Jul 20 2024 00:00:00 GMT-0400 (Eastern Daylight Time)",
+                        "checkout": "Wed Jul 24 2024 00:00:00 GMT-0400 (Eastern Daylight Time)",
+                        "guests": "3 Guests",
+                        "pay_when": "pay-now",
+                        "card_details": {
+                            "card_number": "4111111111111111",
+                            "expiration": "12 / 26",
+                            "cvv": "123",
+                            "zipcode": "02351",
+                            "country": "United States"
+                        },
+                        "messageToHost": "Hi Kevin! We're a family of three (1 adult and 2 children) looking forward to a relaxing getaway in the beautiful Cotswolds. The countryside setting looks perfect for our family vacation. Thank you for hosting us!"
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "recentSearchesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "staynb": {
+                    "price_multiplier": 1,
+                    "latency": 0,
+                    "no_vacancy": false,
+                    "service_unavailable": false,
+                    "hide_aria_labels": false,
+                    "error_making_reservation": false,
+                    "run_id": "KISS-1",
+                    "task_id": "staynb-4",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 26,
+    "stats.cum_n_token_goal": 800,
+    "stats.max_n_token_goal": 32,
+    "stats.cum_n_token_url": 1800,
+    "stats.max_n_token_url": 145,
+    "stats.cum_n_token_focused_element_bid": 30,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 226,
+    "stats.max_n_token_last_action": 54,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 2127624,
+    "stats.max_n_token_dom_txt": 164258,
+    "stats.cum_n_token_axtree_txt": 382421,
+    "stats.max_n_token_axtree_txt": 32180,
+    "stats.cum_n_token_pruned_html": 1916520,
+    "stats.max_n_token_pruned_html": 157514,
+    "stats.cum_n_token_agent_messages": 1052845,
+    "stats.max_n_token_agent_messages": 106230,
+    "stats.cum_step_elapsed": 50.62965798377991,
+    "stats.max_step_elapsed": 7.198148012161255,
+    "stats.cum_agent_elapsed": 284.52601766586304,
+    "stats.max_agent_elapsed": 38.24993371963501,
+    "terminated": true,
+    "truncated": false
+}

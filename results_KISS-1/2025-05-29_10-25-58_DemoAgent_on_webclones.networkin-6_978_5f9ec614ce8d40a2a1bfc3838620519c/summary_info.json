@@ -1,0 +1,104 @@
+{
+    "task_name": "webclones.networkin-6",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.networkin-6_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 6,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.networkin-6_978",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "contactListDiff": {
+                "added": {
+                    "1": {
+                        "id": "emilyjohnson",
+                        "headline": "Data Scientist",
+                        "photoUrl": "/images/profiles/emilyjohnson.png",
+                        "name": "Emily Johnson",
+                        "date": "2025-05-29T14:26:54.859Z",
+                        "expanded": false,
+                        "lastMessage": "howdy, partner",
+                        "lastMessageAuthor": "Div Garg",
+                        "messages": [
+                            {
+                                "id": "b8d03b77-919f-49c3-9610-87f49ec46769",
+                                "author": "Div Garg",
+                                "photoUrl": "/images/profiles/svanweelden.png",
+                                "timestamp": "2025-05-29T14:26:54.859Z",
+                                "message": "howdy, partner",
+                                "type": "text"
+                            }
+                        ]
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "profilesDiff": {
+                "added": {
+                    "2": {
+                        "connectionName": "Emily Johnson"
+                    }
+                },
+                "deleted": {},
+                "updated": {
+                    "2": {
+                        "connectionGrade": "1st"
+                    }
+                }
+            },
+            "searchHistoryDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "connectionRequestsDiff": {
+                "removed": []
+            },
+            "feedPostsDiff": {
+                "added": [],
+                "removed": [],
+                "modified": []
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 7,
+    "stats.cum_n_token_goal": 168,
+    "stats.max_n_token_goal": 28,
+    "stats.cum_n_token_url": 77,
+    "stats.max_n_token_url": 13,
+    "stats.cum_n_token_focused_element_bid": 6,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 37,
+    "stats.max_n_token_last_action": 13,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 166137,
+    "stats.max_n_token_dom_txt": 29396,
+    "stats.cum_n_token_axtree_txt": 10041,
+    "stats.max_n_token_axtree_txt": 3253,
+    "stats.cum_n_token_pruned_html": 141792,
+    "stats.max_n_token_pruned_html": 25356,
+    "stats.cum_n_token_agent_messages": 43194,
+    "stats.max_n_token_agent_messages": 8745,
+    "stats.cum_step_elapsed": 15.65593409538269,
+    "stats.max_step_elapsed": 6.876353025436401,
+    "stats.cum_agent_elapsed": 53.28992986679077,
+    "stats.max_agent_elapsed": 11.175129175186157,
+    "terminated": true,
+    "truncated": false
+}

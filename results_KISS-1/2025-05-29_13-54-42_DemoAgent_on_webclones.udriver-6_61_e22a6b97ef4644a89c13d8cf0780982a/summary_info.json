@@ -1,0 +1,140 @@
+{
+    "task_name": "webclones.udriver-6",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.udriver-6_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 10,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.udriver-6_61",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "display_time_msg_cancel_booked_trip": 4000,
+                "display_time_preparing_opts_delay": 2500,
+                "hide_aria_labels": true,
+                "error_finding_driver": false,
+                "error_booking_ride": false,
+                "latency": 0,
+                "location_preset": 1,
+                "simulating_booking_trip": 5000,
+                "simulating_duration_ride": 30000,
+                "simulating_searching_driver_delay": 7000,
+                "cars": {
+                    "UdriverX": {
+                        "multiplier": 1,
+                        "discount": 0.05
+                    },
+                    "Comfort": {
+                        "multiplier": 1.25,
+                        "discount": 0.1
+                    },
+                    "UdriverXL": {
+                        "multiplier": 1.15,
+                        "discount": 0.15
+                    }
+                },
+                "run_id": "KISS-1",
+                "task_id": "udriver-6",
+                "removePopup": false
+            },
+            "differences": {
+                "currentTrips": {
+                    "added": {
+                        "6": {
+                            "pickup": {
+                                "id": 691,
+                                "basePrice": 6,
+                                "identifier": "UXT",
+                                "name": "Palace Hotel, a Luxury Collection Hotel, San Francisco",
+                                "formattedAddress": "2 New Montgomery St, San Francisco, CA 94105, USA",
+                                "address": "2 New Montgomery St, San Francisco, CA 94105, USA",
+                                "addressComponents": {
+                                    "street": "2 New Montgomery Street",
+                                    "city": "San Francisco",
+                                    "state": "CA",
+                                    "zipCode": "94105",
+                                    "country": "US"
+                                }
+                            },
+                            "destination": {
+                                "id": 60,
+                                "basePrice": 9,
+                                "identifier": "3S1",
+                                "name": "Osha Thai BBQ San Francisco",
+                                "formattedAddress": "692 Geary St, San Francisco, CA 94102, USA",
+                                "address": "692 Geary St, San Francisco, CA 94102, USA",
+                                "addressComponents": {
+                                    "street": "692 Geary Street",
+                                    "city": "San Francisco",
+                                    "state": "CA",
+                                    "zipCode": "94102",
+                                    "country": "US"
+                                }
+                            },
+                            "car": {
+                                "type": "UdriverXL",
+                                "image": "/udriver-xl1.png",
+                                "seats": 6,
+                                "time": "3 min away - 1:41 PM",
+                                "description": "Affordable rides for groups up to 6",
+                                "multiplier": 1.15,
+                                "discount": 0.15,
+                                "finalPrice": 14.66,
+                                "priceWithoutDiscount": 17.25
+                            },
+                            "date": "5/29/2025",
+                            "time": "1:56:10 PM",
+                            "status": "in progress"
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                },
+                "bookedTrips": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 11,
+    "stats.cum_n_token_goal": 200,
+    "stats.max_n_token_goal": 20,
+    "stats.cum_n_token_url": 125,
+    "stats.max_n_token_url": 14,
+    "stats.cum_n_token_focused_element_bid": 10,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 68,
+    "stats.max_n_token_last_action": 12,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 76221,
+    "stats.max_n_token_dom_txt": 11606,
+    "stats.cum_n_token_axtree_txt": 10379,
+    "stats.max_n_token_axtree_txt": 1700,
+    "stats.cum_n_token_pruned_html": 55933,
+    "stats.max_n_token_pruned_html": 9570,
+    "stats.cum_n_token_agent_messages": 44184,
+    "stats.max_n_token_agent_messages": 8236,
+    "stats.cum_step_elapsed": 27.946180820465088,
+    "stats.max_step_elapsed": 6.246117115020752,
+    "stats.cum_agent_elapsed": 83.62028908729553,
+    "stats.max_agent_elapsed": 13.942981719970703,
+    "terminated": true,
+    "truncated": false
+}

@@ -1,0 +1,88 @@
+{
+    "task_name": "webclones.topwork-1",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.topwork-1_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 22,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.topwork-1_420",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "messagesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "offersDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "jobsDiff": {
+                "added": {
+                    "0": {
+                        "id": "1748538472811",
+                        "title": "Frontend Developer needed for React & TypeScript web application",
+                        "skills": [
+                            "React",
+                            "TypeScript",
+                            "JavaScript",
+                            "HTML",
+                            "CSS"
+                        ],
+                        "estimateSize": "medium",
+                        "estimateTime": "1 to 3 months",
+                        "estimateLevelExperience": "intermediate",
+                        "estimateHireOpportunity": "no",
+                        "hourlyRateFrom": 30,
+                        "hourlyRateTo": 55,
+                        "fixedPrice": 0,
+                        "description": "We are looking for an experienced Frontend Developer to join our team for a web application development project.\n\n**What you'll be working on:**\n- Building responsive, modern web applications using React and TypeScript\n- Implementing clean, maintainable, and scalable code\n- Creating reusable UI components and integrating with APIs\n- Ensuring cross-browser compatibility and optimal performance\n- Collaborating closely with our design and backend teams\n\n**Required Skills & Experience:**\n- Strong proficiency in React (minimum 2+ years)\n- Solid experience with TypeScript for type-safe development\n- Expert knowledge of JavaScript, HTML5, and CSS3\n- Experience with modern frontend tooling and build processes\n- Understanding of responsive design principles\n- Knowledge of version control (Git)\n\n**Project Details:**\n- Duration: 1-3 months\n- Medium-sized, well-defined project scope\n- Hourly rate: $30-55/hour based on experience\n- Remote work opportunity\n\n**Communication & Work Style:**\n- Regular updates and progress reports\n- Collaborative approach with team meetings\n- Proactive communication about challenges or blockers\n- Adherence to coding standards and best practices\n\nIf you're passionate about creating exceptional user experiences and have the technical expertise we're looking for, we'd love to hear from you!",
+                        "createdAt": "2025-05-29T17:07:52.811Z"
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 23,
+    "stats.cum_n_token_goal": 682,
+    "stats.max_n_token_goal": 31,
+    "stats.cum_n_token_url": 283,
+    "stats.max_n_token_url": 13,
+    "stats.cum_n_token_focused_element_bid": 22,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 420,
+    "stats.max_n_token_last_action": 283,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 343092,
+    "stats.max_n_token_dom_txt": 37065,
+    "stats.cum_n_token_axtree_txt": 20874,
+    "stats.max_n_token_axtree_txt": 3155,
+    "stats.cum_n_token_pruned_html": 249168,
+    "stats.max_n_token_pruned_html": 32808,
+    "stats.cum_n_token_agent_messages": 276150,
+    "stats.max_n_token_agent_messages": 85587,
+    "stats.cum_step_elapsed": 44.29017639160156,
+    "stats.max_step_elapsed": 9.666415929794312,
+    "stats.cum_agent_elapsed": 172.90269994735718,
+    "stats.max_agent_elapsed": 14.36005187034607,
+    "terminated": true,
+    "truncated": false
+}

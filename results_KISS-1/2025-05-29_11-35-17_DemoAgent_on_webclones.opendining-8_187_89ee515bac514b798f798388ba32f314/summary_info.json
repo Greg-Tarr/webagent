@@ -1,0 +1,97 @@
+{
+    "task_name": "webclones.opendining-8",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.opendining-8_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 27,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.opendining-8_187",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {
+                    "0": {
+                        "restaurant": {
+                            "id": "91cb4e63-2f2f-4bde-8e0b-c12d2ec8a672",
+                            "name": "Dim Sum Delight",
+                            "description": "Authentic Cantonese dim sum in a bustling atmosphere.",
+                            "rating": "4.26",
+                            "price_range": "$50 to $100",
+                            "food_type": "Chinese",
+                            "adjectives": [
+                                "authentic",
+                                "delicious",
+                                "bustling"
+                            ]
+                        },
+                        "date": "2024-07-18T04:00:00.000Z",
+                        "time": "1:30 PM",
+                        "guests": "2 people",
+                        "tel": "+1 418 543 8090",
+                        "optionals": {
+                            "occasion": "Birthday",
+                            "request": "Window table preferred if available"
+                        }
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "reviewDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "open_dining": {
+                    "latency": 0,
+                    "hide_aria_labels": false,
+                    "error_booking": false,
+                    "no_available_slots": false,
+                    "run_id": "KISS-1",
+                    "task_id": "opendining-8",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 28,
+    "stats.cum_n_token_goal": 837,
+    "stats.max_n_token_goal": 31,
+    "stats.cum_n_token_url": 936,
+    "stats.max_n_token_url": 82,
+    "stats.cum_n_token_focused_element_bid": 34,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 191,
+    "stats.max_n_token_last_action": 18,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 4355025,
+    "stats.max_n_token_dom_txt": 214858,
+    "stats.cum_n_token_axtree_txt": 198645,
+    "stats.max_n_token_axtree_txt": 10942,
+    "stats.cum_n_token_pruned_html": 2965495,
+    "stats.max_n_token_pruned_html": 162227,
+    "stats.cum_n_token_agent_messages": 756279,
+    "stats.max_n_token_agent_messages": 60382,
+    "stats.cum_step_elapsed": 54.955233097076416,
+    "stats.max_step_elapsed": 7.2941670417785645,
+    "stats.cum_agent_elapsed": 315.54698395729065,
+    "stats.max_agent_elapsed": 24.2749240398407,
+    "terminated": true,
+    "truncated": false
+}

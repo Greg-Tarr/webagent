@@ -1,0 +1,229 @@
+{
+    "task_name": "webclones.gocalendar-10",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.gocalendar-10_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 28,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.gocalendar-10_920",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "eventsDiff": {
+                "added": {},
+                "deleted": {
+                    "3d4e5f6g-6789-2345-6789-012345678904": {
+                        "id": "3d4e5f6g-6789-2345-6789-012345678904",
+                        "meetingId": "",
+                        "start": "2024-07-18T16:00:00.000Z",
+                        "end": "2024-07-18T17:00:00.000Z",
+                        "title": "Morning Coffee with sister",
+                        "description": "Catch up with sister over coffee.",
+                        "guests": [],
+                        "hasMeeting": false,
+                        "location": "The Caf\u00e9",
+                        "allDay": false,
+                        "calendarOptions": {
+                            "calendar": {
+                                "id": "2",
+                                "name": "Family",
+                                "color": "rgb(244, 81, 30)"
+                            },
+                            "color": "rgb(233, 30, 99)",
+                            "availability": "Free",
+                            "visibility": "Private",
+                            "notification": "15 minutes before"
+                        }
+                    },
+                    "3p4q5r6s-9012-3456-7890-123456789907": {
+                        "id": "3p4q5r6s-9012-3456-7890-123456789907",
+                        "meetingId": "",
+                        "start": "2024-07-19T00:00:00.000Z",
+                        "end": "2024-07-19T02:00:00.000Z",
+                        "title": "Workout Session",
+                        "description": "Strength training at the gym.",
+                        "guests": [],
+                        "hasMeeting": false,
+                        "location": "Local Gym",
+                        "allDay": false,
+                        "calendarOptions": {
+                            "calendar": {
+                                "id": "3",
+                                "name": "Personal",
+                                "color": "rgb(63, 81, 181)"
+                            },
+                            "color": "rgb(156, 39, 176)",
+                            "availability": "Free",
+                            "visibility": "Private",
+                            "notification": "30 minutes before"
+                        }
+                    },
+                    "5d8e9f0g-5678-9012-3141-516171819203": {
+                        "id": "5d8e9f0g-5678-9012-3141-516171819203",
+                        "meetingId": "",
+                        "start": "2024-07-16T01:00:00.000Z",
+                        "end": "2024-07-16T02:00:00.000Z",
+                        "title": "Coffee with Mentor",
+                        "description": "Catch up and discuss career advice.",
+                        "guests": [],
+                        "hasMeeting": false,
+                        "location": "Local Caf\u00e9",
+                        "allDay": false,
+                        "calendarOptions": {
+                            "calendar": {
+                                "id": "3",
+                                "name": "Personal",
+                                "color": "rgb(63, 81, 181)"
+                            },
+                            "color": "rgb(156, 39, 176)",
+                            "availability": "Free",
+                            "visibility": "Private",
+                            "notification": "15 minutes before"
+                        }
+                    },
+                    "5e9f0g1h-6789-0123-4567-890112131415": {
+                        "id": "5e9f0g1h-6789-0123-4567-890112131415",
+                        "meetingId": "",
+                        "start": "2024-07-16T04:00:00.000Z",
+                        "end": "2024-07-16T06:00:00.000Z",
+                        "title": "Dinner and Movie",
+                        "description": "Dinner at a restaurant followed by a movie.",
+                        "guests": [],
+                        "hasMeeting": false,
+                        "location": "Restaurant & Local Cinema",
+                        "allDay": false,
+                        "calendarOptions": {
+                            "calendar": {
+                                "id": "3",
+                                "name": "Personal",
+                                "color": "rgb(63, 81, 181)"
+                            },
+                            "color": "rgb(0, 188, 212)",
+                            "availability": "Free",
+                            "visibility": "Private",
+                            "notification": "1 hour before"
+                        }
+                    },
+                    "5f0g1h2i-7890-1234-5678-901213141617": {
+                        "id": "5f0g1h2i-7890-1234-5678-901213141617",
+                        "meetingId": "",
+                        "start": "2024-07-16T16:00:00.000Z",
+                        "end": "2024-07-16T17:00:00.000Z",
+                        "title": "Morning Walk",
+                        "description": "Start the day with a refreshing walk in the park.",
+                        "guests": [],
+                        "hasMeeting": false,
+                        "location": "Central Park",
+                        "allDay": false,
+                        "calendarOptions": {
+                            "calendar": {
+                                "id": "3",
+                                "name": "Personal",
+                                "color": "rgb(63, 81, 181)"
+                            },
+                            "color": "rgb(156, 39, 176)",
+                            "availability": "Free",
+                            "visibility": "Private",
+                            "notification": "15 minutes before"
+                        }
+                    },
+                    "6e1f2g3h-6789-0123-4567-890112131628": {
+                        "id": "6e1f2g3h-6789-0123-4567-890112131628",
+                        "meetingId": "",
+                        "start": "2024-07-18T02:30:00.000Z",
+                        "end": "2024-07-18T04:00:00.000Z",
+                        "title": "Dinner with Friends",
+                        "description": "Casual dinner and catch up with friends.",
+                        "guests": [],
+                        "hasMeeting": false,
+                        "location": "Italian Bistro",
+                        "allDay": false,
+                        "calendarOptions": {
+                            "calendar": {
+                                "id": "3",
+                                "name": "Personal",
+                                "color": "rgb(63, 81, 181)"
+                            },
+                            "color": "rgb(255, 87, 34)",
+                            "availability": "Free",
+                            "visibility": "Private",
+                            "notification": "1 hour before"
+                        }
+                    },
+                    "6f2g3h4i-7890-1234-5678-901213141635": {
+                        "id": "6f2g3h4i-7890-1234-5678-901213141635",
+                        "meetingId": "",
+                        "start": "2024-07-18T05:00:00.000Z",
+                        "end": "2024-07-18T06:00:00.000Z",
+                        "title": "Reading Time",
+                        "description": "Relaxing and reading my favorite book.",
+                        "guests": [],
+                        "hasMeeting": false,
+                        "location": "Home",
+                        "allDay": false,
+                        "calendarOptions": {
+                            "calendar": {
+                                "id": "3",
+                                "name": "Personal",
+                                "color": "rgb(63, 81, 181)"
+                            },
+                            "color": "rgb(156, 39, 176)",
+                            "availability": "Free",
+                            "visibility": "Private",
+                            "notification": "15 minutes before"
+                        }
+                    }
+                },
+                "updated": {}
+            },
+            "calendarsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "joinedEventsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 29,
+    "stats.cum_n_token_goal": 672,
+    "stats.max_n_token_goal": 24,
+    "stats.cum_n_token_url": 308,
+    "stats.max_n_token_url": 11,
+    "stats.cum_n_token_focused_element_bid": 39,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 179,
+    "stats.max_n_token_last_action": 10,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 970175,
+    "stats.max_n_token_dom_txt": 38259,
+    "stats.cum_n_token_axtree_txt": 54732,
+    "stats.max_n_token_axtree_txt": 3241,
+    "stats.cum_n_token_pruned_html": 819367,
+    "stats.max_n_token_pruned_html": 32864,
+    "stats.cum_n_token_agent_messages": 291407,
+    "stats.max_n_token_agent_messages": 13973,
+    "stats.cum_step_elapsed": 54.85509276390076,
+    "stats.max_step_elapsed": 7.144546985626221,
+    "stats.cum_agent_elapsed": 265.5163085460663,
+    "stats.max_agent_elapsed": 23.489819049835205,
+    "terminated": true,
+    "truncated": false
+}

@@ -1,0 +1,86 @@
+{
+    "task_name": "webclones.topwork-5",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.topwork-5_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 8,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.topwork-5_755",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "messagesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {
+                    "0": {
+                        "id": "johnsmith",
+                        "photoUrl": "/images/freelancer/profiles/johnsmith.png",
+                        "job": "Full Stack Developer",
+                        "name": "John S.",
+                        "lastActivity": "2025-05-29T17:22:35.323Z",
+                        "lastMessage": "Hi John,\n\nI hope you're doing well! I wanted to check in on the progress of our e-commerce website front-end development project. I see you've been putting in great work with 36 hours logged this week.\n\nCould you please provide me with:\n1. A brief status update on the current progress\n2. Any challenges or roadblocks you might be facing\n3. Your estimated completion timeline for the remaining work\n\nI appreciate your dedication to the project and look forward to hearing from you.\n\nBest regards,\nGreg",
+                        "lastMessageAuthor": "Div Garg",
+                        "messages": {
+                            "0": {
+                                "id": "1b1e9da9-cf2d-4422-8b26-90cb11c99ace",
+                                "photoUrl": "/images/freelancer/profiles/svanweelden.png",
+                                "author": "Div Garg",
+                                "timestamp": "2025-05-29T17:22:35.323Z",
+                                "message": "Hi John,\n\nI hope you're doing well! I wanted to check in on the progress of our e-commerce website front-end development project. I see you've been putting in great work with 36 hours logged this week.\n\nCould you please provide me with:\n1. A brief status update on the current progress\n2. Any challenges or roadblocks you might be facing\n3. Your estimated completion timeline for the remaining work\n\nI appreciate your dedication to the project and look forward to hearing from you.\n\nBest regards,\nGreg"
+                            }
+                        }
+                    }
+                }
+            },
+            "offersDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "jobsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 9,
+    "stats.cum_n_token_goal": 304,
+    "stats.max_n_token_goal": 38,
+    "stats.cum_n_token_url": 114,
+    "stats.max_n_token_url": 19,
+    "stats.cum_n_token_focused_element_bid": 11,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 159,
+    "stats.max_n_token_last_action": 124,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 179446,
+    "stats.max_n_token_dom_txt": 37105,
+    "stats.cum_n_token_axtree_txt": 11178,
+    "stats.max_n_token_axtree_txt": 3040,
+    "stats.cum_n_token_pruned_html": 142723,
+    "stats.max_n_token_pruned_html": 32538,
+    "stats.cum_n_token_agent_messages": 56892,
+    "stats.max_n_token_agent_messages": 9883,
+    "stats.cum_step_elapsed": 18.628142595291138,
+    "stats.max_step_elapsed": 6.63058876991272,
+    "stats.cum_agent_elapsed": 76.49904012680054,
+    "stats.max_agent_elapsed": 12.814260005950928,
+    "terminated": true,
+    "truncated": false
+}

@@ -1,0 +1,69 @@
+{
+    "task_name": "webclones.fly-unified-1",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.fly-unified-1_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 27,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.fly-unified-1_949",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "hide_aria_labels": true,
+                "latency": 0,
+                "delay_after_redirecting_home": 3000,
+                "display_bkg_img_duration": 8000,
+                "simulating_booking_flight": 6000,
+                "run_id": "KISS-1",
+                "task_id": "fly-unified-1",
+                "removePopup": false
+            },
+            "differences": {
+                "bookedFlights": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 28,
+    "stats.cum_n_token_goal": 540,
+    "stats.max_n_token_goal": 20,
+    "stats.cum_n_token_url": 6555,
+    "stats.max_n_token_url": 905,
+    "stats.cum_n_token_focused_element_bid": 41,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 188,
+    "stats.max_n_token_last_action": 11,
+    "stats.cum_n_token_last_action_error": 541,
+    "stats.max_n_token_last_action_error": 185,
+    "stats.cum_n_token_dom_txt": 1132722,
+    "stats.max_n_token_dom_txt": 89655,
+    "stats.cum_n_token_axtree_txt": 202210,
+    "stats.max_n_token_axtree_txt": 19300,
+    "stats.cum_n_token_pruned_html": 764305,
+    "stats.max_n_token_pruned_html": 76018,
+    "stats.cum_n_token_agent_messages": 1297206,
+    "stats.max_n_token_agent_messages": 113872,
+    "stats.cum_step_elapsed": 53.421470165252686,
+    "stats.max_step_elapsed": 7.676608085632324,
+    "stats.cum_agent_elapsed": 249.4884123802185,
+    "stats.max_agent_elapsed": 35.78819012641907,
+    "terminated": true,
+    "truncated": false
+}

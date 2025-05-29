@@ -1,0 +1,75 @@
+{
+    "task_name": "webclones.staynb-7",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.staynb-7_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 5,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.staynb-7_498",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "recentSearchesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "staynb": {
+                    "price_multiplier": 1,
+                    "latency": 0,
+                    "no_vacancy": false,
+                    "service_unavailable": false,
+                    "hide_aria_labels": false,
+                    "error_making_reservation": false,
+                    "run_id": "KISS-1",
+                    "task_id": "staynb-7",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 6,
+    "stats.cum_n_token_goal": 160,
+    "stats.max_n_token_goal": 32,
+    "stats.cum_n_token_url": 55,
+    "stats.max_n_token_url": 11,
+    "stats.cum_n_token_focused_element_bid": 5,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 40,
+    "stats.max_n_token_last_action": 12,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 785075,
+    "stats.max_n_token_dom_txt": 157471,
+    "stats.cum_n_token_axtree_txt": 153494,
+    "stats.max_n_token_axtree_txt": 30782,
+    "stats.cum_n_token_pruned_html": 755313,
+    "stats.max_n_token_pruned_html": 151513,
+    "stats.cum_n_token_agent_messages": 159585,
+    "stats.max_n_token_agent_messages": 32833,
+    "stats.cum_step_elapsed": 13.897030591964722,
+    "stats.max_step_elapsed": 7.039844751358032,
+    "stats.cum_agent_elapsed": 99.67402768135071,
+    "stats.max_agent_elapsed": 57.75821590423584,
+    "terminated": true,
+    "truncated": false
+}

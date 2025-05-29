@@ -1,0 +1,140 @@
+{
+    "task_name": "webclones.udriver-5",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.udriver-5_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 12,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.udriver-5_6",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "display_time_msg_cancel_booked_trip": 4000,
+                "display_time_preparing_opts_delay": 2500,
+                "hide_aria_labels": true,
+                "error_finding_driver": false,
+                "error_booking_ride": false,
+                "latency": 0,
+                "location_preset": 1,
+                "simulating_booking_trip": 5000,
+                "simulating_duration_ride": 30000,
+                "simulating_searching_driver_delay": 7000,
+                "cars": {
+                    "UdriverX": {
+                        "multiplier": 1,
+                        "discount": 0.05
+                    },
+                    "Comfort": {
+                        "multiplier": 1.25,
+                        "discount": 0.1
+                    },
+                    "UdriverXL": {
+                        "multiplier": 1.15,
+                        "discount": 0.15
+                    }
+                },
+                "run_id": "KISS-1",
+                "task_id": "udriver-5",
+                "removePopup": false
+            },
+            "differences": {
+                "currentTrips": {
+                    "added": {
+                        "6": {
+                            "pickup": {
+                                "id": 733,
+                                "basePrice": 15,
+                                "identifier": "DLO",
+                                "name": "333 Fremont Apartments",
+                                "formattedAddress": "333 Fremont St, San Francisco, CA 94105, USA",
+                                "address": "333 Fremont St, San Francisco, CA 94105, USA",
+                                "addressComponents": {
+                                    "street": "333 Fremont Street",
+                                    "city": "San Francisco",
+                                    "state": "CA",
+                                    "zipCode": "94105",
+                                    "country": "US"
+                                }
+                            },
+                            "destination": {
+                                "id": 528,
+                                "basePrice": 12,
+                                "identifier": "D90",
+                                "name": "FITNESS SF - Castro",
+                                "formattedAddress": "2301 Market St, San Francisco, CA 94114, USA",
+                                "address": "2301 Market St, San Francisco, CA 94114, USA",
+                                "addressComponents": {
+                                    "street": "2301 Market Street",
+                                    "city": "San Francisco",
+                                    "state": "CA",
+                                    "zipCode": "94114",
+                                    "country": "US"
+                                }
+                            },
+                            "car": {
+                                "type": "UdriverX",
+                                "image": "https://d1a3f4spazzrp4.cloudfront.net/car-types/haloProductImages/v1.1/Select_v1.png",
+                                "seats": 4,
+                                "time": "1 min away - 1:39 PM",
+                                "description": "Affordable rides, all to yourself",
+                                "multiplier": 1,
+                                "discount": 0.05,
+                                "finalPrice": 25.65,
+                                "priceWithoutDiscount": 27
+                            },
+                            "date": "5/29/2025",
+                            "time": "1:54:08 PM",
+                            "status": "in progress"
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                },
+                "bookedTrips": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 13,
+    "stats.cum_n_token_goal": 372,
+    "stats.max_n_token_goal": 31,
+    "stats.cum_n_token_url": 144,
+    "stats.max_n_token_url": 14,
+    "stats.cum_n_token_focused_element_bid": 12,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 87,
+    "stats.max_n_token_last_action": 14,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 85082,
+    "stats.max_n_token_dom_txt": 11598,
+    "stats.cum_n_token_axtree_txt": 11277,
+    "stats.max_n_token_axtree_txt": 1684,
+    "stats.cum_n_token_pruned_html": 60710,
+    "stats.max_n_token_pruned_html": 9562,
+    "stats.cum_n_token_agent_messages": 62770,
+    "stats.max_n_token_agent_messages": 8823,
+    "stats.cum_step_elapsed": 30.954919815063477,
+    "stats.max_step_elapsed": 6.592337131500244,
+    "stats.cum_agent_elapsed": 89.41507863998413,
+    "stats.max_agent_elapsed": 14.48003101348877,
+    "terminated": true,
+    "truncated": false
+}

@@ -1,0 +1,89 @@
+{
+    "task_name": "webclones.topwork-4",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.topwork-4_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 28,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.topwork-4_186",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "messagesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "offersDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "jobsDiff": {
+                "added": {
+                    "0": {
+                        "id": "1748539252293",
+                        "title": "UI/UX Designer needed with Figma, Sketch & Adobe Creative Suite expertise",
+                        "skills": [
+                            "Figma",
+                            "Sketch",
+                            "Adobe Creative Suite",
+                            "Wireframing",
+                            "Prototyping",
+                            "Responsive Design"
+                        ],
+                        "estimateSize": "medium",
+                        "estimateTime": "1 to 3 months",
+                        "estimateLevelExperience": "intermediate",
+                        "estimateHireOpportunity": "no",
+                        "hourlyRateFrom": 30,
+                        "hourlyRateTo": 60,
+                        "fixedPrice": 0,
+                        "description": "We are seeking a talented UI/UX Designer to join our team for an exciting design project. \n\n**Required Skills & Expertise:**\n\u2022 Expert proficiency in Figma, Sketch, and Adobe Creative Suite\n\u2022 Strong experience in Wireframing and creating detailed user flows\n\u2022 Advanced Prototyping skills to bring designs to life\n\u2022 Expertise in Responsive Design for multi-device experiences\n\u2022 Intermediate level experience with substantial portfolio demonstrating these skills\n\n**Project Details:**\n\u2022 Medium-sized project scope (well-defined requirements)\n\u2022 Timeline: 1-3 months duration\n\u2022 Hourly rate: $30-60/hr based on experience\n\u2022 Looking for someone with substantial experience in UI/UX design\n\n**What You'll Do:**\n\u2022 Create wireframes and user flows for new features\n\u2022 Design high-fidelity mockups and interactive prototypes\n\u2022 Ensure responsive design across all devices and platforms\n\u2022 Collaborate with our team to refine and iterate on designs\n\u2022 Deliver clean, organized design files using Figma/Sketch\n\n**What We're Looking For:**\n\u2022 Portfolio showcasing expertise in the required tools and skills\n\u2022 Strong communication skills and ability to work collaboratively\n\u2022 Attention to detail and commitment to delivering high-quality work\n\u2022 Experience with modern design principles and user-centered design\n\nThis is an excellent opportunity to work on impactful design projects. Please share your portfolio demonstrating your expertise in the mentioned tools and skills.",
+                        "createdAt": "2025-05-29T17:20:52.293Z"
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 29,
+    "stats.cum_n_token_goal": 1204,
+    "stats.max_n_token_goal": 43,
+    "stats.cum_n_token_url": 362,
+    "stats.max_n_token_url": 13,
+    "stats.cum_n_token_focused_element_bid": 28,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 515,
+    "stats.max_n_token_last_action": 304,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 439139,
+    "stats.max_n_token_dom_txt": 37303,
+    "stats.cum_n_token_axtree_txt": 24585,
+    "stats.max_n_token_axtree_txt": 3152,
+    "stats.cum_n_token_pruned_html": 312176,
+    "stats.max_n_token_pruned_html": 32798,
+    "stats.cum_n_token_agent_messages": 315724,
+    "stats.max_n_token_agent_messages": 80851,
+    "stats.cum_step_elapsed": 52.87430477142334,
+    "stats.max_step_elapsed": 7.807739973068237,
+    "stats.cum_agent_elapsed": 210.0589361190796,
+    "stats.max_agent_elapsed": 15.119770050048828,
+    "terminated": true,
+    "truncated": false
+}

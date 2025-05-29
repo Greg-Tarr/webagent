@@ -1,0 +1,93 @@
+{
+    "task_name": "webclones.omnizon-4",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.omnizon-4_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 13,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.omnizon-4_585",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "orderDetailsDiff": {
+                "added": {
+                    "0": {
+                        "order": {
+                            "cart": [
+                                {
+                                    "id": "15",
+                                    "name": "Marshall Emberton II Portable Bluetooth Speaker, Black & Brass",
+                                    "quantity": 1
+                                },
+                                {
+                                    "id": "61",
+                                    "name": "Michael Kors Oversized Slim Runway Men's Watch, Stainless Steel Watch for Men",
+                                    "quantity": 1
+                                }
+                            ],
+                            "total": "299.99",
+                            "selected_delivery": "Tomorrow, Jul 19",
+                            "selected_card": null,
+                            "config": {
+                                "omnizon": {
+                                    "latency": 0,
+                                    "hide_aria_labels": false,
+                                    "apply_discount": false,
+                                    "discount_percentage": 20,
+                                    "run_id": "KISS-1",
+                                    "task_id": "omnizon-4",
+                                    "removePopup": false
+                                }
+                            }
+                        }
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "cartDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 14,
+    "stats.cum_n_token_goal": 663,
+    "stats.max_n_token_goal": 51,
+    "stats.cum_n_token_url": 326,
+    "stats.max_n_token_url": 41,
+    "stats.cum_n_token_focused_element_bid": 14,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 97,
+    "stats.max_n_token_last_action": 20,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 526250,
+    "stats.max_n_token_dom_txt": 71068,
+    "stats.cum_n_token_axtree_txt": 34421,
+    "stats.max_n_token_axtree_txt": 5815,
+    "stats.cum_n_token_pruned_html": 241409,
+    "stats.max_n_token_pruned_html": 49113,
+    "stats.cum_n_token_agent_messages": 188428,
+    "stats.max_n_token_agent_messages": 23160,
+    "stats.cum_step_elapsed": 27.364630699157715,
+    "stats.max_step_elapsed": 6.494843006134033,
+    "stats.cum_agent_elapsed": 90.33736538887024,
+    "stats.max_agent_elapsed": 11.591282367706299,
+    "terminated": true,
+    "truncated": false
+}

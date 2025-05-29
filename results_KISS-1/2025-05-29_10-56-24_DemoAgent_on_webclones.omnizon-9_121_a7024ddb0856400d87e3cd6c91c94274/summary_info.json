@@ -1,0 +1,94 @@
+{
+    "task_name": "webclones.omnizon-9",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.omnizon-9_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 15,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.omnizon-9_121",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "orderDetailsDiff": {
+                "added": {
+                    "0": {
+                        "order": {
+                            "cart": [
+                                {
+                                    "id": "16",
+                                    "name": "PlayStation DualSense\u00ae Wireless Controller - White",
+                                    "quantity": 1
+                                }
+                            ],
+                            "total": "74.00",
+                            "selected_delivery": "Tomorrow, Jul 19",
+                            "selected_card": {
+                                "cardName": "Jack Fulton",
+                                "cardNumber": "9231 3432 8927 7764",
+                                "month": "1",
+                                "year": "2029",
+                                "security_code": "128"
+                            },
+                            "config": {
+                                "omnizon": {
+                                    "latency": 0,
+                                    "hide_aria_labels": false,
+                                    "apply_discount": false,
+                                    "discount_percentage": 20,
+                                    "run_id": "KISS-1",
+                                    "task_id": "omnizon-9",
+                                    "removePopup": false
+                                }
+                            }
+                        }
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "cartDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 16,
+    "stats.cum_n_token_goal": 1080,
+    "stats.max_n_token_goal": 72,
+    "stats.cum_n_token_url": 200,
+    "stats.max_n_token_url": 21,
+    "stats.cum_n_token_focused_element_bid": 23,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 121,
+    "stats.max_n_token_last_action": 21,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 672261,
+    "stats.max_n_token_dom_txt": 71068,
+    "stats.cum_n_token_axtree_txt": 37614,
+    "stats.max_n_token_axtree_txt": 5815,
+    "stats.cum_n_token_pruned_html": 345320,
+    "stats.max_n_token_pruned_html": 49113,
+    "stats.cum_n_token_agent_messages": 154595,
+    "stats.max_n_token_agent_messages": 16289,
+    "stats.cum_step_elapsed": 31.184223413467407,
+    "stats.max_step_elapsed": 6.627627849578857,
+    "stats.cum_agent_elapsed": 112.50267267227173,
+    "stats.max_agent_elapsed": 12.409573078155518,
+    "terminated": true,
+    "truncated": false
+}

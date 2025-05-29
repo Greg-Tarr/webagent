@@ -1,0 +1,121 @@
+{
+    "task_name": "webclones.dashdish-7",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.dashdish-7_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 10,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.dashdish-7_762",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "hide_aria_labels": true,
+                "latency": 0,
+                "time_notification": 3000,
+                "estimated_tax": 0.67,
+                "run_id": "KISS-1",
+                "task_id": "dashdish-7",
+                "removePopup": false
+            },
+            "differences": {
+                "foodOrders": {
+                    "added": {
+                        "0": {
+                            "orderId": "ORD-1748510156518-80",
+                            "checkoutDetails": {
+                                "account": {
+                                    "email": "shaun.t.vanweelden@gmail.com"
+                                },
+                                "shipping": {
+                                    "shippingOption": "Delivery",
+                                    "time": "30-35",
+                                    "address": "710 Portofino Ln, Foster City, CA 94404, USA",
+                                    "phone": "(415) 861-2802",
+                                    "isGift": true,
+                                    "deliveryOption": "Express",
+                                    "dropOffOption": "Leave it at my door",
+                                    "dropOffInstructions": "Please ring the bell and drop off at the door, thank you. Its around the corner on the ground floor"
+                                },
+                                "payment": {
+                                    "id": "1",
+                                    "type": "Visa",
+                                    "cardNumber": "4444111122225097",
+                                    "last4": "5097",
+                                    "expiry": "06/2025",
+                                    "color": "#1a73e8",
+                                    "label": "VISA"
+                                },
+                                "charges": {
+                                    "tip": 2,
+                                    "deliveryFee": 5.98,
+                                    "serviceFee": 3,
+                                    "estimatedTax": 0.67,
+                                    "totalAmount": 29.66
+                                }
+                            },
+                            "cartItems": [
+                                {
+                                    "id": "3",
+                                    "photoUrl": "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+                                    "name": "Mushroom Swiss Burger",
+                                    "price": "16.41",
+                                    "likePercentage": "80%",
+                                    "likeCount": "(30)",
+                                    "restaurantName": "DragonEats",
+                                    "size": "Large",
+                                    "quantity": 1,
+                                    "basePrice": 16.41,
+                                    "extraCost": 1.6,
+                                    "finalPrice": "18.01",
+                                    "uniqueIdentifier": "3-Large-1.6"
+                                }
+                            ],
+                            "createdAt": "2025-05-29T09:15:56.518Z"
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 11,
+    "stats.cum_n_token_goal": 330,
+    "stats.max_n_token_goal": 33,
+    "stats.cum_n_token_url": 154,
+    "stats.max_n_token_url": 19,
+    "stats.cum_n_token_focused_element_bid": 10,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 56,
+    "stats.max_n_token_last_action": 7,
+    "stats.cum_n_token_last_action_error": 12,
+    "stats.max_n_token_last_action_error": 12,
+    "stats.cum_n_token_dom_txt": 1279379,
+    "stats.max_n_token_dom_txt": 1018009,
+    "stats.cum_n_token_axtree_txt": 43582,
+    "stats.max_n_token_axtree_txt": 26798,
+    "stats.cum_n_token_pruned_html": 1262333,
+    "stats.max_n_token_pruned_html": 1013770,
+    "stats.cum_n_token_agent_messages": 209710,
+    "stats.max_n_token_agent_messages": 36135,
+    "stats.cum_step_elapsed": 23.551859378814697,
+    "stats.max_step_elapsed": 6.783013105392456,
+    "stats.cum_agent_elapsed": 92.92345952987671,
+    "stats.max_agent_elapsed": 12.601470947265625,
+    "terminated": true,
+    "truncated": false
+}

@@ -1,0 +1,88 @@
+{
+    "task_name": "webclones.omnizon-6",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.omnizon-6_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 15,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.omnizon-6_144",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "orderDetailsDiff": {
+                "added": {
+                    "0": {
+                        "order": {
+                            "cart": [
+                                {
+                                    "id": "22",
+                                    "name": "SAMSUNG Galaxy S24 Ultra Cell Phone, 512GB AI Smartphone, Unlocked Android, 50MP Zoom Camera, Long Battery Life, S Pen, US Version, 2024, Titanium Gray",
+                                    "quantity": 1
+                                }
+                            ],
+                            "total": "1419.99",
+                            "selected_delivery": "Tomorrow, Jul 19",
+                            "selected_card": null,
+                            "config": {
+                                "omnizon": {
+                                    "latency": 0,
+                                    "hide_aria_labels": false,
+                                    "apply_discount": false,
+                                    "discount_percentage": 20,
+                                    "run_id": "KISS-1",
+                                    "task_id": "omnizon-6",
+                                    "removePopup": false
+                                }
+                            }
+                        }
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "cartDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 16,
+    "stats.cum_n_token_goal": 825,
+    "stats.max_n_token_goal": 55,
+    "stats.cum_n_token_url": 287,
+    "stats.max_n_token_url": 29,
+    "stats.cum_n_token_focused_element_bid": 17,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 115,
+    "stats.max_n_token_last_action": 17,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 594465,
+    "stats.max_n_token_dom_txt": 71192,
+    "stats.cum_n_token_axtree_txt": 46776,
+    "stats.max_n_token_axtree_txt": 5815,
+    "stats.cum_n_token_pruned_html": 263691,
+    "stats.max_n_token_pruned_html": 49113,
+    "stats.cum_n_token_agent_messages": 192622,
+    "stats.max_n_token_agent_messages": 18195,
+    "stats.cum_step_elapsed": 30.552303552627563,
+    "stats.max_step_elapsed": 6.135685920715332,
+    "stats.cum_agent_elapsed": 163.92116022109985,
+    "stats.max_agent_elapsed": 27.376134872436523,
+    "terminated": true,
+    "truncated": false
+}

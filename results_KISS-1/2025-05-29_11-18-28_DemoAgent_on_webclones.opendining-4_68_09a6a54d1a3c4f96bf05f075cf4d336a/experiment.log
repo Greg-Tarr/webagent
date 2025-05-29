@@ -1,0 +1,426 @@
+2025-05-29 11:18:29,012 - agisdk.REAL.browsergym.experiments.loop - INFO - Running experiment DemoAgent_on_webclones.opendining-4_68 in:
+  results/2025-05-29_11-18-28_DemoAgent_on_webclones.opendining-4_68_09a6a54d1a3c4f96bf05f075cf4d336a
+2025-05-29 11:18:29,036 - agisdk.REAL.browsergym.webclones.base - INFO - Using run_id from environment variable: KISS-1
+2025-05-29 11:18:29,036 - agisdk.REAL.browsergym.core.env - WARNING - Overriding the task's viewport parameter ({'width': 1280, 'height': 720} => {'width': 1280, 'height': 720}). This might change the task's behaviour and difficulty.
+2025-05-29 11:18:47,173 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:18:47,314 - agisdk.REAL.browsergym.experiments.loop - INFO - Let me break down the goal:
+1. Use the search bar to search for a restaurant on September 2nd at 4:30 PM for 7 people
+2. Use "Japanese" as the search term
+3. Book the first result
+4. For fields I don't know, fill them in with anything of my choice
+
+Looking at the current state, I can see this is the OpenDining homepage. There are search form elements at the top:
+- A textbox with value 'Jul 18' (this appears to be the date field)
+- A combobox for time with value '1:00 PM' 
+- A combobox for number of guests with value '2 people'
+- A textbox for 'Location, Restaurant, or Cuisine'
+- A "Let's go" button
+
+I need to:
+1. Change the date to September 2nd 
+2. Change the time to 4:30 PM
+3. Change the number of people to 7
+4. Enter "Japanese" in the search term field
+5. Click "Let's go" to search
+6. Book the first result
+
+Let me start by modifying the search parameters. I'll need to be careful with the date format and make sure I select the right options.
+
+Looking at the current date field [125], it shows 'Jul 18'. I need to change this to September 2nd. Let me click on it first to see what options are available.
+
+action:
+click(bid="125")
+
+2025-05-29 11:18:55,411 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:18:55,552 - agisdk.REAL.browsergym.experiments.loop - INFO - Good! The date picker is now open and I can see we're currently on July 2024. I need to change this to September 2024, so I need to navigate forward two months. I can see there's a "Next month" button (bid 2356). Let me click it twice to get to September.
+
+Current state: July 2024 calendar is open, showing July 18th selected
+Goal: Need to get to September 2nd, 2024
+
+action:
+click(bid="2356")
+
+2025-05-29 11:19:04,172 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:19:04,323 - agisdk.REAL.browsergym.experiments.loop - INFO - I can see that the date picker is now showing August 2024. I need to click "Next month" one more time to get to September 2024, then select September 2nd.
+
+Current status:
+- Date picker is open
+- Currently showing August 2024
+- Need to navigate to September 2024
+- Need to select September 2nd
+- Then need to change time to 4:30 PM
+- Then need to change guests to 7 people
+- Then need to search for "Japanese"
+- Then book the first result
+
+Let me continue with clicking "Next month" to get to September.
+
+action:
+click(bid="2356")
+
+2025-05-29 11:19:13,683 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:19:13,823 - agisdk.REAL.browsergym.experiments.loop - INFO - Perfect! Now I'm in September 2024. I need to click on September 2nd to select that date.
+
+Looking at the calendar, I can see:
+- Row 1: 1 2 3 4 5 6 7
+- The 2nd is in the first row (gridcell '2', selected=False)
+
+I need to click on the cell that contains "2" which is [2522] gridcell '2', selected=False
+
+action:
+click(bid="2522")
+
+2025-05-29 11:19:23,287 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:19:23,425 - agisdk.REAL.browsergym.experiments.loop - INFO - Great! I can see that the date has been successfully updated to "Sep 2" in the date field. Now I need to:
+
+1. Set the time to 4:30 PM (currently shows 1:00 PM)
+2. Set the number of guests to 7 people (currently shows 2 people)
+3. Enter "Japanese" in the search bar
+4. Click "Let's go" to search
+5. Book the first result
+
+Let me start with the time. I need to click on the time dropdown which shows "1:00 PM".
+
+action:
+click(bid="134")
+
+2025-05-29 11:19:30,532 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:19:30,674 - agisdk.REAL.browsergym.experiments.loop - INFO - Great! I can see the time dropdown is open and it's showing all the time options. I can see that "1:00 PM" is currently selected and focused, and I need to select "4:30 PM" which I can see is option [2660]. Let me click on it.
+
+action:
+click(bid="2660")
+
+2025-05-29 11:19:40,266 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:19:40,407 - agisdk.REAL.browsergym.experiments.loop - INFO - Great! I can see that the time has been successfully changed to "4:30 PM". Now I can see the current state:
+
+1. Date: "Sep 2" ✓ (correct)
+2. Time: "4:30 PM" ✓ (correct) 
+3. Number of guests: "2 people" ✗ (needs to be changed to 7 people)
+4. Search term: Need to enter "Japanese" in the search box
+
+Now I need to:
+1. Change the number of guests from 2 people to 7 people
+2. Enter "Japanese" in the search bar
+3. Search and book the first result
+
+Let me first click on the guests dropdown to change it to 7 people.
+
+action:
+click(bid="145")
+
+2025-05-29 11:19:47,169 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:19:47,310 - agisdk.REAL.browsergym.experiments.loop - INFO - Perfect! The guests dropdown is open and I can see "7 people" in the list. I need to click on it to select 7 people.
+
+action:
+click(bid="2708")
+
+2025-05-29 11:19:56,575 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:19:56,722 - agisdk.REAL.browsergym.experiments.loop - INFO - Perfect! Now I can see that all the search parameters have been set correctly:
+- Date: "Sep 2" ✓
+- Time: "4:30 PM" ✓  
+- Guests: "7 people" ✓
+
+Now I need to:
+1. Enter "Japanese" in the search bar (textbox 158)
+2. Click the "Let's go" button to search
+3. Book the first result
+
+Let me first click on the search bar and enter "Japanese".
+
+action:
+click(bid="158")
+
+2025-05-29 11:20:06,936 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:20:07,083 - agisdk.REAL.browsergym.experiments.loop - INFO - Great! The search textbox is now focused. I can see that all the parameters are correctly set:
+- Date: "Sep 2" ✓
+- Time: "4:30 PM" ✓  
+- Guests: "7 people" ✓
+- The search textbox is focused and ready for input
+
+Now I need to:
+1. Type "Japanese" in the search bar
+2. Click "Let's go" to search
+3. Book the first result from the search results
+
+Let me type "Japanese" in the search box.
+
+action:
+fill(bid="158", value="Japanese")
+
+2025-05-29 11:20:15,811 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:20:15,953 - agisdk.REAL.browsergym.experiments.loop - INFO - Great! I've successfully entered "Japanese" into the search bar. Now I can see the search form is complete with:
+- Date: "Sep 2" 
+- Time: "4:30 PM"
+- Guests: "7 people"
+- Search term: "Japanese"
+
+Now I need to click the "Let's go" button to perform the search and then book the first result that appears.
+
+action:
+click(bid="162")
+
+2025-05-29 11:20:29,005 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:20:29,053 - agisdk.REAL.browsergym.experiments.loop - INFO - Perfect! The search worked and I can see:
+
+1. The search was successful - I can see "You searched for "japanese" in San Francisco" and "1 restaurants match "japanese""
+2. There is exactly one Japanese restaurant in the results: "Sushi Zen"
+3. The search parameters are correctly shown: Sep 2, 4:30 PM, 7 people
+4. This is the first (and only) result, so I need to book this restaurant
+
+I can see several booking time options for Sushi Zen:
+- Book for 4:30 PM (this matches exactly what we searched for)
+- Book for 5:00 PM 
+- Book for 5:30 PM
+- Book for 6:00 PM
+- Book for 6:30 PM
+
+Since the goal is to search for a restaurant on September 2nd at 4:30 PM for 7 people and book the first result, I should click on the "Book for 4:30 PM" button to book the exact time that was requested.
+
+Let me click on "Book for 4:30 PM" to book this restaurant.
+
+action:
+click(bid="2852")
+
+2025-05-29 11:20:48,840 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:20:48,884 - agisdk.REAL.browsergym.experiments.loop - INFO - I'm now on the booking page for Sushi Zen. I can see there are some issues here:
+
+1. The booking shows "Jul 18" and "2 people" instead of "Sep 2" and "7 people"
+2. The URL shows the wrong parameters: "guests=2%20people&date=Thu,%2018%20Jul%202024%2004:00:00%20GMT&time=4:30%20PM"
+
+This is concerning because the booking details don't match what I searched for. The time is correct (4:30 PM), but the date and number of guests are wrong.
+
+I need to think carefully about what went wrong and whether I should proceed or go back. Let me analyze:
+
+The search URL in the previous page was correct: `https://evals-opendining.vercel.app/s?date=Mon,%2002%20Sep%202024%2004:00:00%20GMT&guests=7%20people&time=4:30%20PM&query=Japanese`
+
+But when I clicked the "Book for 4:30 PM" button, it took me to a booking URL with different parameters: `https://evals-opendining.vercel.app/booking?index=1d558d65-9f70-4aa0-a4d2-f1e6b3e6b80f&guests=2%20people&date=Thu,%2018%20Jul%202024%2004:00:00%20GMT&time=4:30%20PM`
+
+This suggests the booking links on the search results page still had the old parameters embedded in them. This is a website issue, but I need to work around it.
+
+The important instruction says: "the final result has to be exactly correct, exactly! if it's even slightly wrong you should start over"
+
+Since the booking is showing the wrong date (Jul 18 instead of Sep 2) and wrong number of guests (2 instead of 7), this is definitely wrong and I should start over.
+
+
+I'll explore alternative navigation methods to ensure I get the correct booking parameters. Perhaps investigating the restaurant's details page might provide a more reliable booking route. I'll carefully retrace my steps and look for a way to maintain the precise search criteria I originally intended.
+
+action:
+go_back()
+
+2025-05-29 11:21:03,618 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:21:03,665 - agisdk.REAL.browsergym.experiments.loop - INFO - I'm back on the search results page. I can see that:
+
+1. The search parameters at the top show: Sep 2, 4:30 PM, 7 people ✓ (all correct)
+2. The URL shows the correct parameters: date=Mon,%2002%20Sep%202024%2004:00:00%20GMT&guests=7%20people&time=4:30%20PM
+3. But I notice that the booking links in the search results still have the wrong parameters in their URLs - they show: guests=2%20people&date=Thu,%2018%20Jul%202024%2004:00:00%20GMT
+
+This suggests that the booking buttons aren't properly inheriting the search parameters. Let me try a different approach. Instead of clicking the individual time buttons, let me click on the restaurant card itself to go to the restaurant details page, which might properly carry forward the search parameters.
+
+I can see there's a link "View details for Sushi Zen" that has the correct parameters in its URL: url='https://evals-opendining.vercel.app/r/1d558d65-9f70-4aa0-a4d2-f1e6b3e6b80f?date=Mon,%2002%20Sep%202024%2004:00:00%20GMT&guests=7%20people&time=4:30%20PM'
+
+Let me click on that instead.
+
+action:
+click(bid="3028")
+
+2025-05-29 11:21:15,562 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:21:15,576 - agisdk.REAL.browsergym.experiments.loop - INFO - Perfect! I'm now on the restaurant detail page for Sushi Zen. I can see in the URL that it has the correct parameters:
+- date=Mon,%2002%20Sep%202024%2004:00:00%20GMT (September 2, 2024)
+- guests=7%20people 
+- time=4:30%20PM
+
+This looks good. Now I need to look for a booking button or option on this page. The page shows restaurant details, photos, reviews, etc. I need to scroll down or look for a booking section that should inherit these correct parameters.
+
+Let me scroll down to see if there's a booking section below.
+
+action:
+scroll(delta_x=0, delta_y=500)
+
+2025-05-29 11:21:23,617 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:21:23,641 - agisdk.REAL.browsergym.experiments.loop - INFO - I've scrolled down but I don't see any booking options yet. I can see this is a restaurant detail page with photos, reviews, ratings, etc. I need to continue scrolling to find the booking section. The current state shows I'm viewing the restaurant details page for Sushi Zen with photos and review information, but I haven't reached the booking section yet.
+
+Let me continue scrolling down to find the booking options.
+
+action:
+scroll(delta_x=0, delta_y=500)
+
+2025-05-29 11:21:33,415 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:21:33,431 - agisdk.REAL.browsergym.experiments.loop - INFO - The page state didn't change when I scrolled, which suggests I may have reached the bottom of the page or there might be no booking section visible on this detail page. Let me take a screenshot to see the current state of the page and understand what's visible.
+
+action:
+take_screenshot()
+
+2025-05-29 11:21:41,955 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:21:41,986 - agisdk.REAL.browsergym.experiments.loop - INFO - I can see the restaurant detail page with photos, menu section, and reviews. I can see there's a "WRITE A REVIEW" button at the bottom, but I don't see any booking options on this page yet. I need to continue scrolling to see if there are booking options further down, or I might need to try a different approach.
+
+Let me continue scrolling down to see if there are booking options below the reviews section.
+
+action:
+scroll(delta_x=0, delta_y=500)
+
+2025-05-29 11:21:49,853 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:21:49,882 - agisdk.REAL.browsergym.experiments.loop - INFO - I'm scrolling down to find the booking section but the page state isn't changing. This could mean either:
+1. I've reached the bottom of the page
+2. The booking section is in a different location 
+3. The page might have a fixed layout where the booking section is in a sidebar or at the top
+
+Let me scroll back up to see if I missed a booking section at the top of the page. Often restaurant booking pages have the reservation form at the top or in a prominent location.
+
+action:
+scroll(delta_x=0, delta_y=-1000)
+
+2025-05-29 11:22:00,444 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:22:00,476 - agisdk.REAL.browsergym.experiments.loop - INFO - I've been scrolling up and down on this restaurant detail page but I'm not seeing any booking options. Let me think about this carefully. 
+
+Looking at the URL, I'm on the restaurant detail page with the correct parameters:
+- date=Mon,%2002%20Sep%202024%2004:00:00%20GMT (September 2, 2024)
+- guests=7%20people  
+- time=4:30%20PM
+
+But I'm not seeing any booking form or booking buttons on this page. This could mean:
+1. The booking section might be further down the page that I haven't reached yet
+2. The page might not be fully loaded - I should try refreshing
+3. I might need to try a different approach
+
+Let me try refreshing the page first to see if there's a booking section that didn't load properly.
+
+action:
+refresh()
+
+2025-05-29 11:22:18,027 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:22:18,110 - agisdk.REAL.browsergym.experiments.loop - INFO - Excellent! Now I can see the booking section has loaded properly. After the refresh, I can see:
+
+1. **Booking Section**: "Make a reservation" section is now visible at the bottom of the page
+2. **Correct Parameters**: 
+   - Date: "Sep 2, 2024" ✓
+   - Guests: "7 people" ✓ 
+   - Time: "4:30 PM" ✓
+
+3. **Available Booking Times**: I can see several time slots:
+   - 4:30 PM (this is exactly what I need!)
+   - 5:00 PM
+   - 5:30 PM
+   - 6:00 PM
+   - 6:30 PM
+
+Perfect! All the search parameters are correctly set, and I can see the "4:30 PM" booking button which matches exactly what was requested. The URL in the link for the 4:30 PM slot also shows the correct parameters:
+- guests=7%20people
+- date=Mon,%2002%20Sep%202024%2004:00:00%20GMT
+- time=4:30%20PM
+
+This is exactly what I need. I should click on the "4:30 PM" button to book the reservation.
+
+action:
+click(bid="1078")
+
+2025-05-29 11:22:28,345 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:22:28,393 - agisdk.REAL.browsergym.experiments.loop - INFO - Great! I can see that I've successfully navigated to the booking page. The URL shows:
+'https://evals-opendining.vercel.app/booking?index=1d558d65-9f70-4aa0-a4d2-f1e6b3e6b80f&guests=7%20people&date=Mon,%2002%20Sep%202024%2004:00:00%20GMT&time=4:30%20PM'
+
+This confirms that all the parameters are correct:
+- Restaurant: 1d558d65-9f70-4aa0-a4d2-f1e6b3e6b80f (which was Sushi Zen, the first Japanese restaurant result)
+- Guests: 7 people ✓
+- Date: Mon, 02 Sep 2024 ✓ 
+- Time: 4:30 PM ✓
+
+I can see there's a progress bar showing, which suggests the booking page is loading. Let me wait for it to fully load and then see if there's a booking form I need to fill out.
+
+action:
+noop(wait_ms=3000)
+
+2025-05-29 11:22:46,403 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:22:46,440 - agisdk.REAL.browsergym.experiments.loop - INFO - Perfect! The booking form has loaded and I can see all the correct details:
+
+✓ Restaurant: "Sushi Zen" (the first Japanese restaurant from search results)
+✓ Date: "Sep 2" 
+✓ Time: "4:30 PM"
+✓ Guests: "7 people"
+
+Now I need to fill out the diner details form. I can see there are several fields:
+
+1. Country selector (already shows United States flag)
+2. Phone number field (shows "+1" prefix)
+3. Email field (shows "user_name@gmail.com" - this seems to be pre-filled but read-only)
+4. Occasion dropdown (optional)
+5. Special request text field (optional)
+6. "Complete reservation" button
+
+The user details provided to me are:
+- Name: Greg Tarr
+- Age: 22
+- Email: gregoryguytarr@gmail.com
+- Phone: +1-418-543-8090
+- Address: 777 Brockton Avenue, Abington MA 2351
+- SSN: 123-45-6789
+
+I notice the email field is read-only and shows "user_name@gmail.com" rather than the email from user details. That's fine - I should focus on the fields I can actually fill.
+
+Looking at the form, I need to:
+1. Fill the phone number field (I can see the +1 is already there, so I need to add "418-543-8090")
+2. The occasion dropdown is optional but I could select something if available
+3. Special request is optional
+4. Then click "Complete reservation"
+
+Let me start with the phone number.
+
+action:
+click(bid="1169")
+
+2025-05-29 11:22:53,360 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:22:53,393 - agisdk.REAL.browsergym.experiments.loop - INFO - The phone field is now focused and shows "+1". I need to add the rest of the phone number. From the user details, the phone number is +1-418-543-8090, so I need to add "418-543-8090" after the "+1" that's already there.
+
+I'll clear the field first and then enter the full phone number.
+
+action:
+clear(bid="1169")
+
+2025-05-29 11:22:59,913 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:22:59,948 - agisdk.REAL.browsergym.experiments.loop - INFO - Good, the phone field is now cleared and focused. Now I need to enter the phone number. From the user details provided: Phone: +1-418-543-8090
+
+I should enter the full phone number including the +1 prefix.
+
+action:
+fill(bid="1169", value="+1-418-543-8090")
+
+2025-05-29 11:23:11,335 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:23:11,367 - agisdk.REAL.browsergym.experiments.loop - INFO - Great! I can see that:
+
+1. The phone number has been successfully entered: "+1 418 543 8090" ✓
+2. The system automatically detected it's a Canadian number (418 is a Quebec area code) and changed the flag to Canada ✓
+3. The email field is already filled and read-only ✓
+
+Now I have all the required fields filled out. The optional fields are:
+- Occasion dropdown (optional)
+- Special request text field (optional)
+
+Since the task says "for fields you don't know the answer for, just fill them in with anything of your choice" and these are optional, I could either leave them blank or fill them with something simple. Since they're optional, I think it's fine to leave them blank and proceed with completing the reservation.
+
+Let me click the "Complete reservation" button to finish the booking.
+
+action:
+click(bid="1193")
+
+2025-05-29 11:23:26,031 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 11:23:26,063 - agisdk.REAL.browsergym.experiments.loop - INFO - Perfect! The booking has been completed successfully. I can see the confirmation page showing:
+
+- "Booking Complete"
+- "You are all set!"
+- Restaurant: "Sushi Zen" ✓
+- Date: "Sep 2" ✓  
+- Time: "4:30 PM" ✓
+- Guests: "7 people" ✓
+
+This confirms that I have successfully:
+1. ✓ Used the search bar to search for a restaurant 
+2. ✓ Set the date to September 2nd
+3. ✓ Set the time to 4:30 PM  
+4. ✓ Set the number of guests to 7 people
+5. ✓ Used "Japanese" as the search term
+6. ✓ Booked the first result (Sushi Zen - which was the only Japanese restaurant that came up in the search)
+
+The task has been completed exactly as requested. All parameters are correct and the booking is confirmed.
+
+action:
+send_msg_to_user(text="Perfect! I have successfully completed your restaurant booking request. \n\n✅ **BOOKING CONFIRMED**\n- **Restaurant**: Sushi Zen (first Japanese restaurant result)\n- **Date**: September 2nd\n- **Time**: 4:30 PM  \n- **Party size**: 7 people\n\nThe system shows \"Booking Complete\" and \"You are all set!\" confirming that your reservation has been successfully made. I used the search bar with \"Japanese\" as the search term, found Sushi Zen as the first result, and completed the booking with all the specified parameters.")
+
+2025-05-29 11:23:29,809 - agisdk.REAL.browsergym.core.env - INFO - The active page and / or page history has changed during task.validate(). A recovery fix will be applied.

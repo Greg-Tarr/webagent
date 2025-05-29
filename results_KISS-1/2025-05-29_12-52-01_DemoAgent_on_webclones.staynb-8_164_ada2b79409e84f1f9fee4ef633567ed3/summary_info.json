@@ -1,0 +1,99 @@
+{
+    "task_name": "webclones.staynb-8",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.staynb-8_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 16,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.staynb-8_164",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {
+                    "0": {
+                        "stay": {
+                            "index": "82",
+                            "title": "Parisian Charm",
+                            "city": "Paris",
+                            "country": "France",
+                            "price": 530,
+                            "averageRating": "4.39",
+                            "host": "Lisa Roberts"
+                        },
+                        "checkin": "Thu Jul 18 2024 13:00:00 GMT-0400 (Eastern Daylight Time)",
+                        "checkout": "Wed Jul 24 2024 13:00:00 GMT-0400 (Eastern Daylight Time)",
+                        "guests": "1 Guest",
+                        "pay_when": "pay-now",
+                        "card_details": {
+                            "card_number": "4532123456789000",
+                            "expiration": "12 / 26",
+                            "cvv": "123",
+                            "zipcode": "2351",
+                            "country": "United States"
+                        },
+                        "messageToHost": ""
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "recentSearchesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "staynb": {
+                    "price_multiplier": 1,
+                    "latency": 0,
+                    "no_vacancy": false,
+                    "service_unavailable": false,
+                    "hide_aria_labels": false,
+                    "error_making_reservation": false,
+                    "run_id": "KISS-1",
+                    "task_id": "staynb-8",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 17,
+    "stats.cum_n_token_goal": 208,
+    "stats.max_n_token_goal": 13,
+    "stats.cum_n_token_url": 1075,
+    "stats.max_n_token_url": 145,
+    "stats.cum_n_token_focused_element_bid": 16,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 151,
+    "stats.max_n_token_last_action": 15,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 1321939,
+    "stats.max_n_token_dom_txt": 158030,
+    "stats.cum_n_token_axtree_txt": 237490,
+    "stats.max_n_token_axtree_txt": 30784,
+    "stats.cum_n_token_pruned_html": 1188879,
+    "stats.max_n_token_pruned_html": 151522,
+    "stats.cum_n_token_agent_messages": 473560,
+    "stats.max_n_token_agent_messages": 45966,
+    "stats.cum_step_elapsed": 34.90839409828186,
+    "stats.max_step_elapsed": 6.941530227661133,
+    "stats.cum_agent_elapsed": 168.70213508605957,
+    "stats.max_agent_elapsed": 17.52316427230835,
+    "terminated": true,
+    "truncated": false
+}

@@ -1,0 +1,73 @@
+{
+    "task_name": "webclones.opendining-1",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.opendining-1_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 16,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.opendining-1_968",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "reviewDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "open_dining": {
+                    "latency": 0,
+                    "hide_aria_labels": false,
+                    "error_booking": false,
+                    "no_available_slots": false,
+                    "run_id": "KISS-1",
+                    "task_id": "opendining-1",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 17,
+    "stats.cum_n_token_goal": 368,
+    "stats.max_n_token_goal": 23,
+    "stats.cum_n_token_url": 176,
+    "stats.max_n_token_url": 11,
+    "stats.cum_n_token_focused_element_bid": 16,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 90,
+    "stats.max_n_token_last_action": 6,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 3431424,
+    "stats.max_n_token_dom_txt": 215089,
+    "stats.cum_n_token_axtree_txt": 172504,
+    "stats.max_n_token_axtree_txt": 10942,
+    "stats.cum_n_token_pruned_html": 2589173,
+    "stats.max_n_token_pruned_html": 162228,
+    "stats.cum_n_token_agent_messages": 408710,
+    "stats.max_n_token_agent_messages": 39936,
+    "stats.cum_step_elapsed": 37.91791486740112,
+    "stats.max_step_elapsed": 8.265727996826172,
+    "stats.cum_agent_elapsed": 162.32830619812012,
+    "stats.max_agent_elapsed": 19.101989030838013,
+    "terminated": true,
+    "truncated": false
+}

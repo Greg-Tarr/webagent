@@ -1,0 +1,67 @@
+{
+    "task_name": "webclones.gocalendar-2",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.gocalendar-2_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 28,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.gocalendar-2_638",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "eventsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "calendarsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "joinedEventsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 29,
+    "stats.cum_n_token_goal": 476,
+    "stats.max_n_token_goal": 17,
+    "stats.cum_n_token_url": 276,
+    "stats.max_n_token_url": 11,
+    "stats.cum_n_token_focused_element_bid": 33,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 193,
+    "stats.max_n_token_last_action": 15,
+    "stats.cum_n_token_last_action_error": 36,
+    "stats.max_n_token_last_action_error": 12,
+    "stats.cum_n_token_dom_txt": 742486,
+    "stats.max_n_token_dom_txt": 35564,
+    "stats.cum_n_token_axtree_txt": 56409,
+    "stats.max_n_token_axtree_txt": 3241,
+    "stats.cum_n_token_pruned_html": 606184,
+    "stats.max_n_token_pruned_html": 29769,
+    "stats.cum_n_token_agent_messages": 388164,
+    "stats.max_n_token_agent_messages": 79789,
+    "stats.cum_step_elapsed": 49.130131006240845,
+    "stats.max_step_elapsed": 6.22204327583313,
+    "stats.cum_agent_elapsed": 312.96735882759094,
+    "stats.max_agent_elapsed": 25.62267804145813,
+    "terminated": true,
+    "truncated": false
+}

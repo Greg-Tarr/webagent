@@ -1,0 +1,121 @@
+{
+    "task_name": "webclones.dashdish-11",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.dashdish-11_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 13,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.dashdish-11_702",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "hide_aria_labels": true,
+                "latency": 0,
+                "time_notification": 3000,
+                "estimated_tax": 0.67,
+                "run_id": "KISS-1",
+                "task_id": "dashdish-11",
+                "removePopup": false
+            },
+            "differences": {
+                "foodOrders": {
+                    "added": {
+                        "0": {
+                            "orderId": "ORD-1748509300042-646",
+                            "checkoutDetails": {
+                                "account": {
+                                    "email": "shaun.t.vanweelden@gmail.com"
+                                },
+                                "shipping": {
+                                    "shippingOption": "Delivery",
+                                    "time": "45-60",
+                                    "address": "710 Portofino Ln, Foster City, CA 94404, USA",
+                                    "phone": "(415) 861-2802",
+                                    "isGift": true,
+                                    "deliveryOption": "Standard",
+                                    "dropOffOption": "Leave it at my door",
+                                    "dropOffInstructions": "Please ring the bell and drop off at the door, thank you. Its around the corner on the ground floor"
+                                },
+                                "payment": {
+                                    "id": "1",
+                                    "type": "Visa",
+                                    "cardNumber": "4444111122225097",
+                                    "last4": "5097",
+                                    "expiry": "06/2025",
+                                    "color": "#1a73e8",
+                                    "label": "VISA"
+                                },
+                                "charges": {
+                                    "tip": 2,
+                                    "deliveryFee": 2.99,
+                                    "serviceFee": 3,
+                                    "estimatedTax": 0.67,
+                                    "totalAmount": 26.67
+                                }
+                            },
+                            "cartItems": [
+                                {
+                                    "id": "1",
+                                    "photoUrl": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+                                    "name": "Chicken Biryani",
+                                    "price": "17.11",
+                                    "likePercentage": "76%",
+                                    "likeCount": "(28)",
+                                    "restaurantName": "Mashaallah Halal Food Pakistani Food",
+                                    "size": "Medium",
+                                    "quantity": 1,
+                                    "basePrice": 17.11,
+                                    "extraCost": 0.9,
+                                    "finalPrice": "18.01",
+                                    "uniqueIdentifier": "1-Medium-0.9"
+                                }
+                            ],
+                            "createdAt": "2025-05-29T09:01:40.042Z"
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 14,
+    "stats.cum_n_token_goal": 663,
+    "stats.max_n_token_goal": 51,
+    "stats.cum_n_token_url": 218,
+    "stats.max_n_token_url": 19,
+    "stats.cum_n_token_focused_element_bid": 13,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 85,
+    "stats.max_n_token_last_action": 12,
+    "stats.cum_n_token_last_action_error": 12,
+    "stats.max_n_token_last_action_error": 12,
+    "stats.cum_n_token_dom_txt": 1448809,
+    "stats.max_n_token_dom_txt": 1018009,
+    "stats.cum_n_token_axtree_txt": 54896,
+    "stats.max_n_token_axtree_txt": 26798,
+    "stats.cum_n_token_pruned_html": 1426094,
+    "stats.max_n_token_pruned_html": 1013770,
+    "stats.cum_n_token_agent_messages": 220109,
+    "stats.max_n_token_agent_messages": 31823,
+    "stats.cum_step_elapsed": 28.555232524871826,
+    "stats.max_step_elapsed": 6.485822916030884,
+    "stats.cum_agent_elapsed": 116.81333422660828,
+    "stats.max_agent_elapsed": 24.006110906600952,
+    "terminated": true,
+    "truncated": false
+}

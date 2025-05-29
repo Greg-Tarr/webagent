@@ -1,0 +1,93 @@
+{
+    "task_name": "webclones.udriver-3",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.udriver-3_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 13,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.udriver-3_808",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "display_time_msg_cancel_booked_trip": 4000,
+                "display_time_preparing_opts_delay": 2500,
+                "hide_aria_labels": true,
+                "error_finding_driver": false,
+                "error_booking_ride": false,
+                "latency": 0,
+                "location_preset": 1,
+                "simulating_booking_trip": 5000,
+                "simulating_duration_ride": 30000,
+                "simulating_searching_driver_delay": 7000,
+                "cars": {
+                    "UdriverX": {
+                        "multiplier": 1,
+                        "discount": 0.05
+                    },
+                    "Comfort": {
+                        "multiplier": 1.25,
+                        "discount": 0.1
+                    },
+                    "UdriverXL": {
+                        "multiplier": 1.15,
+                        "discount": 0.15
+                    }
+                },
+                "run_id": "KISS-1",
+                "task_id": "udriver-3",
+                "removePopup": false
+            },
+            "differences": {
+                "currentTrips": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                },
+                "bookedTrips": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 14,
+    "stats.cum_n_token_goal": 260,
+    "stats.max_n_token_goal": 20,
+    "stats.cum_n_token_url": 167,
+    "stats.max_n_token_url": 14,
+    "stats.cum_n_token_focused_element_bid": 13,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 108,
+    "stats.max_n_token_last_action": 14,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 96697,
+    "stats.max_n_token_dom_txt": 11600,
+    "stats.cum_n_token_axtree_txt": 12353,
+    "stats.max_n_token_axtree_txt": 1688,
+    "stats.cum_n_token_pruned_html": 70192,
+    "stats.max_n_token_pruned_html": 9564,
+    "stats.cum_n_token_agent_messages": 56533,
+    "stats.max_n_token_agent_messages": 7719,
+    "stats.cum_step_elapsed": 29.303847074508667,
+    "stats.max_step_elapsed": 6.330657958984375,
+    "stats.cum_agent_elapsed": 96.12514543533325,
+    "stats.max_agent_elapsed": 11.437453031539917,
+    "terminated": true,
+    "truncated": false
+}

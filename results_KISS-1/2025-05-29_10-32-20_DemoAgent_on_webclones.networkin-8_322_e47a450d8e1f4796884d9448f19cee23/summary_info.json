@@ -1,0 +1,88 @@
+{
+    "task_name": "webclones.networkin-8",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.networkin-8_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 14,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.networkin-8_322",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "contactListDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "profilesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "searchHistoryDiff": {
+                "added": {
+                    "0": {
+                        "searchTerm": "Microsoft",
+                        "timestamp": "2025-05-29T14:33:35.654Z"
+                    },
+                    "1": {
+                        "searchTerm": "",
+                        "timestamp": "2025-05-29T14:33:13.323Z"
+                    },
+                    "2": {
+                        "searchTerm": "",
+                        "timestamp": "2025-05-29T14:32:47.560Z"
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "connectionRequestsDiff": {
+                "removed": []
+            },
+            "feedPostsDiff": {
+                "added": [],
+                "removed": [],
+                "modified": []
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 15,
+    "stats.cum_n_token_goal": 224,
+    "stats.max_n_token_goal": 16,
+    "stats.cum_n_token_url": 198,
+    "stats.max_n_token_url": 17,
+    "stats.cum_n_token_focused_element_bid": 14,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 99,
+    "stats.max_n_token_last_action": 11,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 768865,
+    "stats.max_n_token_dom_txt": 67060,
+    "stats.cum_n_token_axtree_txt": 62363,
+    "stats.max_n_token_axtree_txt": 5164,
+    "stats.cum_n_token_pruned_html": 711901,
+    "stats.max_n_token_pruned_html": 63053,
+    "stats.cum_n_token_agent_messages": 132876,
+    "stats.max_n_token_agent_messages": 15533,
+    "stats.cum_step_elapsed": 30.10261607170105,
+    "stats.max_step_elapsed": 6.9128031730651855,
+    "stats.cum_agent_elapsed": 93.3729145526886,
+    "stats.max_agent_elapsed": 10.717950820922852,
+    "terminated": true,
+    "truncated": false
+}

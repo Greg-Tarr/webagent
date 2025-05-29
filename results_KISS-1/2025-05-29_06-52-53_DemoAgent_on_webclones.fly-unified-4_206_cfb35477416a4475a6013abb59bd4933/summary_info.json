@@ -1,0 +1,492 @@
+{
+    "task_name": "webclones.fly-unified-4",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.fly-unified-4_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 45,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.fly-unified-4_206",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "hide_aria_labels": true,
+                "latency": 0,
+                "delay_after_redirecting_home": 3000,
+                "display_bkg_img_duration": 8000,
+                "simulating_booking_flight": 6000,
+                "run_id": "KISS-1",
+                "task_id": "fly-unified-4",
+                "removePopup": false
+            },
+            "differences": {
+                "bookedFlights": {
+                    "added": {
+                        "0": {
+                            "cartId": "25255aed-0b04-41a3-8aed-4f8b2922c48a",
+                            "countPassengers": 1,
+                            "passengersInfo": [
+                                {
+                                    "firstName": "Jane",
+                                    "lastName": "Smith",
+                                    "middleName": "",
+                                    "dateOfBirth": {
+                                        "month": "2",
+                                        "day": "14",
+                                        "year": "1995"
+                                    },
+                                    "gender": "Female",
+                                    "suffix": "",
+                                    "frequentFlyerProgram": "",
+                                    "frequentFlyerNumber": "",
+                                    "selectedSeat": {
+                                        "outbound": {
+                                            "seat": "3A",
+                                            "price": 152.99
+                                        },
+                                        "return": {
+                                            "seat": "4A",
+                                            "price": 152.99
+                                        }
+                                    }
+                                }
+                            ],
+                            "flight": {
+                                "outboundFlight": {
+                                    "info": {
+                                        "flightId": "7d6f1f7bcf20e8b2dc6f8a6822ff8a96",
+                                        "from": {
+                                            "destination": {
+                                                "city": "Providence",
+                                                "state": "RI",
+                                                "country": "US",
+                                                "code": "PVD"
+                                            },
+                                            "date": "2024-12-05T13:00:00.000Z"
+                                        },
+                                        "to": {
+                                            "destination": {
+                                                "city": "Indianapolis",
+                                                "state": "IN",
+                                                "country": "US",
+                                                "code": "IND"
+                                            },
+                                            "date": "2024-12-05T15:00:00.000Z"
+                                        },
+                                        "stops": 0,
+                                        "segments": [
+                                            {
+                                                "departureTime": "2024-12-05T13:00:00.000Z",
+                                                "arrivalTime": "2024-12-05T17:07:00.000Z",
+                                                "departureCode": "PVD",
+                                                "arrivalCode": "IND",
+                                                "duration": "4h 7m",
+                                                "airline": "Airlines",
+                                                "flightNumber": "UA210",
+                                                "aircraft": "Boeing 777-200",
+                                                "cabinClass": "Economy",
+                                                "meal": "Dinner",
+                                                "amenities": [
+                                                    "WiFi",
+                                                    "Entertainment"
+                                                ],
+                                                "notes": [
+                                                    "1-day arrival",
+                                                    "Change of Terminal",
+                                                    "Overnight"
+                                                ]
+                                            }
+                                        ],
+                                        "prices": {
+                                            "Basic Economy": {
+                                                "basePrice": 135,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 155.29
+                                            },
+                                            "Economy": {
+                                                "basePrice": 185,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 205.29
+                                            },
+                                            "Premium Economy": {
+                                                "basePrice": 285,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 305.29
+                                            },
+                                            "Business": {
+                                                "basePrice": 385,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 405.29
+                                            },
+                                            "First": {
+                                                "basePrice": 535,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 555.29
+                                            }
+                                        }
+                                    },
+                                    "selectedPrice": {
+                                        "type": "Economy",
+                                        "price": {
+                                            "basePrice": 185,
+                                            "taxesAndFees": [
+                                                {
+                                                    "label": "U.S. Transportation Tax",
+                                                    "amount": 5.19
+                                                },
+                                                {
+                                                    "label": "U.S. Passenger Facility Charge",
+                                                    "amount": 4.5
+                                                },
+                                                {
+                                                    "label": "U.S. Flight Segment Tax",
+                                                    "amount": 5
+                                                },
+                                                {
+                                                    "label": "Passenger Civil Aviation Security Service Fee",
+                                                    "amount": 5.6
+                                                }
+                                            ],
+                                            "totalPrice": 205.29
+                                        }
+                                    }
+                                },
+                                "returnFlight": {
+                                    "info": {
+                                        "flightId": "6ff3dfc214c082c4558830e6b0e114ad",
+                                        "from": {
+                                            "destination": {
+                                                "city": "Indianapolis",
+                                                "state": "IN",
+                                                "country": "US",
+                                                "code": "IND"
+                                            },
+                                            "date": "2024-12-09T19:00:00.000Z"
+                                        },
+                                        "to": {
+                                            "destination": {
+                                                "city": "Providence",
+                                                "state": "RI",
+                                                "country": "US",
+                                                "code": "PVD"
+                                            },
+                                            "date": "2024-12-09T21:00:00.000Z"
+                                        },
+                                        "stops": 0,
+                                        "segments": [
+                                            {
+                                                "departureTime": "2024-12-09T19:00:00.000Z",
+                                                "arrivalTime": "2024-12-09T22:54:00.000Z",
+                                                "departureCode": "IND",
+                                                "arrivalCode": "PVD",
+                                                "duration": "3h 54m",
+                                                "airline": "Airlines",
+                                                "flightNumber": "UA349",
+                                                "aircraft": "Boeing 777-200",
+                                                "cabinClass": "Economy",
+                                                "meal": "Dinner",
+                                                "amenities": [
+                                                    "WiFi",
+                                                    "Entertainment"
+                                                ],
+                                                "notes": [
+                                                    "1-day arrival",
+                                                    "Change of Terminal",
+                                                    "Overnight"
+                                                ]
+                                            }
+                                        ],
+                                        "prices": {
+                                            "Basic Economy": {
+                                                "basePrice": 118,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 138.29
+                                            },
+                                            "Economy": {
+                                                "basePrice": 168,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 188.29
+                                            },
+                                            "Premium Economy": {
+                                                "basePrice": 268,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 288.29
+                                            },
+                                            "Business": {
+                                                "basePrice": 368,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 388.29
+                                            },
+                                            "First": {
+                                                "basePrice": 518,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 538.29
+                                            }
+                                        }
+                                    },
+                                    "selectedPrice": {
+                                        "type": "Economy",
+                                        "price": {
+                                            "basePrice": 168,
+                                            "taxesAndFees": [
+                                                {
+                                                    "label": "U.S. Transportation Tax",
+                                                    "amount": 5.19
+                                                },
+                                                {
+                                                    "label": "U.S. Passenger Facility Charge",
+                                                    "amount": 4.5
+                                                },
+                                                {
+                                                    "label": "U.S. Flight Segment Tax",
+                                                    "amount": 5
+                                                },
+                                                {
+                                                    "label": "Passenger Civil Aviation Security Service Fee",
+                                                    "amount": 5.6
+                                                }
+                                            ],
+                                            "totalPrice": 188.29
+                                        }
+                                    }
+                                }
+                            },
+                            "travelOptionBundle": {
+                                "outbound": null,
+                                "return": null
+                            },
+                            "tripInsurance": null,
+                            "finalPrice": "699.56",
+                            "paymentInfo": {
+                                "paymentMethod": "",
+                                "cardNumber": "3783 4214 3523 967",
+                                "expDate": "06/26",
+                                "securityCode": "345",
+                                "nameOnCard": "Jane Smith",
+                                "billingAddress1": "456 Elm St",
+                                "billingAddress2": "",
+                                "city": "Miami",
+                                "state": "FL",
+                                "zip": "33101",
+                                "country": "United States",
+                                "countryCode": "+1",
+                                "phoneNumber": "555-987-6543",
+                                "email": "janesmith@example.com"
+                            }
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 46,
+    "stats.cum_n_token_goal": 5985,
+    "stats.max_n_token_goal": 133,
+    "stats.cum_n_token_url": 3117,
+    "stats.max_n_token_url": 924,
+    "stats.cum_n_token_focused_element_bid": 75,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 386,
+    "stats.max_n_token_last_action": 16,
+    "stats.cum_n_token_last_action_error": 178,
+    "stats.max_n_token_last_action_error": 178,
+    "stats.cum_n_token_dom_txt": 2092354,
+    "stats.max_n_token_dom_txt": 89606,
+    "stats.cum_n_token_axtree_txt": 159705,
+    "stats.max_n_token_axtree_txt": 19445,
+    "stats.cum_n_token_pruned_html": 1474995,
+    "stats.max_n_token_pruned_html": 75973,
+    "stats.cum_n_token_agent_messages": 1796259,
+    "stats.max_n_token_agent_messages": 168984,
+    "stats.cum_step_elapsed": 85.5667233467102,
+    "stats.max_step_elapsed": 6.843765020370483,
+    "stats.cum_agent_elapsed": 381.51396322250366,
+    "stats.max_agent_elapsed": 17.874281883239746,
+    "terminated": true,
+    "truncated": false
+}

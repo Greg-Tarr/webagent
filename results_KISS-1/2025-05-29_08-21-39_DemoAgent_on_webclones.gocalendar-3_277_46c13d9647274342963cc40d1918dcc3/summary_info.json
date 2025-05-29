@@ -1,0 +1,91 @@
+{
+    "task_name": "webclones.gocalendar-3",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.gocalendar-3_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 3,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.gocalendar-3_277",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "eventsDiff": {
+                "added": {},
+                "deleted": {
+                    "4d5e6f7g-1234-5678-9101-112131415918": {
+                        "id": "4d5e6f7g-1234-5678-9101-112131415918",
+                        "meetingId": "",
+                        "start": "2024-07-19T17:00:00.000Z",
+                        "end": "2024-07-19T18:00:00.000Z",
+                        "title": "Breakfast Meeting with Client",
+                        "description": "Discuss the final proposal with client.",
+                        "guests": [],
+                        "hasMeeting": false,
+                        "location": "Hotel Restaurant",
+                        "allDay": false,
+                        "calendarOptions": {
+                            "calendar": {
+                                "id": "1",
+                                "name": "Work",
+                                "color": "rgb(3, 155, 229)"
+                            },
+                            "color": "rgb(0, 188, 212)",
+                            "availability": "Busy",
+                            "visibility": "Default visibility",
+                            "notification": "15 minutes before"
+                        }
+                    }
+                },
+                "updated": {}
+            },
+            "calendarsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "joinedEventsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 4,
+    "stats.cum_n_token_goal": 60,
+    "stats.max_n_token_goal": 20,
+    "stats.cum_n_token_url": 33,
+    "stats.max_n_token_url": 11,
+    "stats.cum_n_token_focused_element_bid": 4,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 13,
+    "stats.max_n_token_last_action": 7,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 105593,
+    "stats.max_n_token_dom_txt": 37490,
+    "stats.cum_n_token_axtree_txt": 6726,
+    "stats.max_n_token_axtree_txt": 3241,
+    "stats.cum_n_token_pruned_html": 89811,
+    "stats.max_n_token_pruned_html": 32221,
+    "stats.cum_n_token_agent_messages": 15809,
+    "stats.max_n_token_agent_messages": 7660,
+    "stats.cum_step_elapsed": 11.587883234024048,
+    "stats.max_step_elapsed": 7.9096221923828125,
+    "stats.cum_agent_elapsed": 35.723437786102295,
+    "stats.max_agent_elapsed": 17.799099922180176,
+    "terminated": true,
+    "truncated": false
+}

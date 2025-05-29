@@ -1,0 +1,140 @@
+{
+    "task_name": "webclones.udriver-11",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.udriver-11_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 17,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.udriver-11_930",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "display_time_msg_cancel_booked_trip": 4000,
+                "display_time_preparing_opts_delay": 2500,
+                "hide_aria_labels": true,
+                "error_finding_driver": false,
+                "error_booking_ride": false,
+                "latency": 0,
+                "location_preset": 1,
+                "simulating_booking_trip": 5000,
+                "simulating_duration_ride": 30000,
+                "simulating_searching_driver_delay": 7000,
+                "cars": {
+                    "UdriverX": {
+                        "multiplier": 1,
+                        "discount": 0.05
+                    },
+                    "Comfort": {
+                        "multiplier": 1.25,
+                        "discount": 0.1
+                    },
+                    "UdriverXL": {
+                        "multiplier": 1.15,
+                        "discount": 0.15
+                    }
+                },
+                "run_id": "KISS-1",
+                "task_id": "udriver-11",
+                "removePopup": false
+            },
+            "differences": {
+                "currentTrips": {
+                    "added": {
+                        "6": {
+                            "pickup": {
+                                "id": 1,
+                                "basePrice": 15,
+                                "identifier": "8F1",
+                                "name": "Pacific Catch",
+                                "formattedAddress": "2027 Chestnut St, San Francisco, CA 94123, USA",
+                                "address": "2027 Chestnut St, San Francisco, CA 94123, USA",
+                                "addressComponents": {
+                                    "street": "2027 Chestnut Street",
+                                    "city": "San Francisco",
+                                    "state": "CA",
+                                    "zipCode": "94123",
+                                    "country": "US"
+                                }
+                            },
+                            "destination": {
+                                "id": 733,
+                                "basePrice": 15,
+                                "identifier": "DLO",
+                                "name": "333 Fremont Apartments",
+                                "formattedAddress": "333 Fremont St, San Francisco, CA 94105, USA",
+                                "address": "333 Fremont St, San Francisco, CA 94105, USA",
+                                "addressComponents": {
+                                    "street": "333 Fremont Street",
+                                    "city": "San Francisco",
+                                    "state": "CA",
+                                    "zipCode": "94105",
+                                    "country": "US"
+                                }
+                            },
+                            "car": {
+                                "type": "Comfort",
+                                "image": "https://d1a3f4spazzrp4.cloudfront.net/car-types/haloProductImages/package_UberComfort_new_2022.png",
+                                "seats": 4,
+                                "time": "2 min away - 1:40 PM",
+                                "description": "Newer cars with extra legroom",
+                                "multiplier": 1.25,
+                                "discount": 0.1,
+                                "finalPrice": 33.75,
+                                "priceWithoutDiscount": 37.5
+                            },
+                            "date": "5/29/2025",
+                            "time": "1:41:14 PM",
+                            "status": "in progress"
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                },
+                "bookedTrips": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 18,
+    "stats.cum_n_token_goal": 595,
+    "stats.max_n_token_goal": 35,
+    "stats.cum_n_token_url": 223,
+    "stats.max_n_token_url": 14,
+    "stats.cum_n_token_focused_element_bid": 17,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 133,
+    "stats.max_n_token_last_action": 14,
+    "stats.cum_n_token_last_action_error": 268,
+    "stats.max_n_token_last_action_error": 268,
+    "stats.cum_n_token_dom_txt": 129965,
+    "stats.max_n_token_dom_txt": 11596,
+    "stats.cum_n_token_axtree_txt": 17133,
+    "stats.max_n_token_axtree_txt": 1680,
+    "stats.cum_n_token_pruned_html": 95395,
+    "stats.max_n_token_pruned_html": 9560,
+    "stats.cum_n_token_agent_messages": 98549,
+    "stats.max_n_token_agent_messages": 11701,
+    "stats.cum_step_elapsed": 38.074403285980225,
+    "stats.max_step_elapsed": 6.101238965988159,
+    "stats.cum_agent_elapsed": 123.84896540641785,
+    "stats.max_agent_elapsed": 11.854320049285889,
+    "terminated": true,
+    "truncated": false
+}

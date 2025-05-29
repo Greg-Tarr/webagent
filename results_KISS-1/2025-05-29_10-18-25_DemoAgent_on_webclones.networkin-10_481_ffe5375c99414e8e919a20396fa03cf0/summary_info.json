@@ -1,0 +1,94 @@
+{
+    "task_name": "webclones.networkin-10",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.networkin-10_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 5,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.networkin-10_481",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "contactListDiff": {
+                "added": {
+                    "0": {
+                        "messages": {
+                            "1": {
+                                "id": "dbd5ee7d-fadc-450f-b10b-a2d81614cbe5",
+                                "author": "Div Garg",
+                                "photoUrl": "/images/profiles/svanweelden.png",
+                                "timestamp": "2025-05-29T14:19:10.744Z",
+                                "message": "Following up on our previous conversation - I hope you're doing well! I apologize for the delayed response. I'd love to catch up and hear how things have been going for you. How has your work been lately?",
+                                "type": "text"
+                            }
+                        }
+                    }
+                },
+                "deleted": {},
+                "updated": {
+                    "0": {
+                        "date": "2025-05-29T14:19:10.744Z",
+                        "lastMessage": "Following up on our previous conversation - I hope you're doing well! I apologize for the delayed response. I'd love to catch up and hear how things have been going for you. How has your work been lately?",
+                        "lastMessageAuthor": "Div Garg"
+                    }
+                }
+            },
+            "profilesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "searchHistoryDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "connectionRequestsDiff": {
+                "removed": []
+            },
+            "feedPostsDiff": {
+                "added": [],
+                "removed": [],
+                "modified": []
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 6,
+    "stats.cum_n_token_goal": 95,
+    "stats.max_n_token_goal": 19,
+    "stats.cum_n_token_url": 84,
+    "stats.max_n_token_url": 18,
+    "stats.cum_n_token_focused_element_bid": 5,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 71,
+    "stats.max_n_token_last_action": 53,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 82920,
+    "stats.max_n_token_dom_txt": 23466,
+    "stats.cum_n_token_axtree_txt": 7770,
+    "stats.max_n_token_axtree_txt": 3678,
+    "stats.cum_n_token_pruned_html": 61932,
+    "stats.max_n_token_pruned_html": 18577,
+    "stats.cum_n_token_agent_messages": 29504,
+    "stats.max_n_token_agent_messages": 7352,
+    "stats.cum_step_elapsed": 14.102898836135864,
+    "stats.max_step_elapsed": 7.205550909042358,
+    "stats.cum_agent_elapsed": 46.921595096588135,
+    "stats.max_agent_elapsed": 14.13273811340332,
+    "terminated": true,
+    "truncated": false
+}

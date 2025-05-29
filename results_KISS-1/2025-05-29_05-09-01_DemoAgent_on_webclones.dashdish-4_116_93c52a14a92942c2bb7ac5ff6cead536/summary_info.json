@@ -1,0 +1,121 @@
+{
+    "task_name": "webclones.dashdish-4",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.dashdish-4_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 11,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.dashdish-4_116",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "hide_aria_labels": true,
+                "latency": 0,
+                "time_notification": 3000,
+                "estimated_tax": 0.67,
+                "run_id": "KISS-1",
+                "task_id": "dashdish-4",
+                "removePopup": false
+            },
+            "differences": {
+                "foodOrders": {
+                    "added": {
+                        "0": {
+                            "orderId": "ORD-1748509862431-752",
+                            "checkoutDetails": {
+                                "account": {
+                                    "email": "shaun.t.vanweelden@gmail.com"
+                                },
+                                "shipping": {
+                                    "shippingOption": "Delivery",
+                                    "time": "?",
+                                    "address": "710 Portofino Ln, Foster City, CA 94404, USA",
+                                    "phone": "(415) 861-2802",
+                                    "isGift": true,
+                                    "deliveryOption": "Schedule",
+                                    "dropOffOption": "Leave it at my door",
+                                    "dropOffInstructions": "Please ring the bell and drop off at the door, thank you. Its around the corner on the ground floor"
+                                },
+                                "payment": {
+                                    "id": "1",
+                                    "type": "Visa",
+                                    "cardNumber": "4444111122225097",
+                                    "last4": "5097",
+                                    "expiry": "06/2025",
+                                    "color": "#1a73e8",
+                                    "label": "VISA"
+                                },
+                                "charges": {
+                                    "tip": 2,
+                                    "deliveryFee": 2.99,
+                                    "serviceFee": 3,
+                                    "estimatedTax": 0.67,
+                                    "totalAmount": 20.73
+                                }
+                            },
+                            "cartItems": [
+                                {
+                                    "id": "1",
+                                    "photoUrl": "https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+                                    "name": "Classic Cheeseburger",
+                                    "price": "10.47",
+                                    "likePercentage": "78%",
+                                    "likeCount": "(29)",
+                                    "restaurantName": "Taco Bell",
+                                    "size": "Large",
+                                    "quantity": 1,
+                                    "basePrice": 10.47,
+                                    "extraCost": 1.6,
+                                    "finalPrice": "12.07",
+                                    "uniqueIdentifier": "1-Large-1.6"
+                                }
+                            ],
+                            "createdAt": "2025-05-29T09:11:02.431Z"
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 12,
+    "stats.cum_n_token_goal": 352,
+    "stats.max_n_token_goal": 32,
+    "stats.cum_n_token_url": 173,
+    "stats.max_n_token_url": 19,
+    "stats.cum_n_token_focused_element_bid": 11,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 70,
+    "stats.max_n_token_last_action": 14,
+    "stats.cum_n_token_last_action_error": 12,
+    "stats.max_n_token_last_action_error": 12,
+    "stats.cum_n_token_dom_txt": 1328023,
+    "stats.max_n_token_dom_txt": 1018009,
+    "stats.cum_n_token_axtree_txt": 44572,
+    "stats.max_n_token_axtree_txt": 26798,
+    "stats.cum_n_token_pruned_html": 1309261,
+    "stats.max_n_token_pruned_html": 1013770,
+    "stats.cum_n_token_agent_messages": 214094,
+    "stats.max_n_token_agent_messages": 36579,
+    "stats.cum_step_elapsed": 25.92649555206299,
+    "stats.max_step_elapsed": 7.464112997055054,
+    "stats.cum_agent_elapsed": 118.73643660545349,
+    "stats.max_agent_elapsed": 18.048360109329224,
+    "terminated": true,
+    "truncated": false
+}

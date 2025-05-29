@@ -1,0 +1,88 @@
+{
+    "task_name": "webclones.omnizon-10",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.omnizon-10_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 8,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.omnizon-10_172",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "orderDetailsDiff": {
+                "added": {
+                    "0": {
+                        "order": {
+                            "cart": [
+                                {
+                                    "id": "1",
+                                    "name": "Owala FreeSip Insulated Stainless Steel Water Bottle with Straw, BPA-Free Sports Water Bottle, Great for Travel, 32 Oz, Shy Marshmallow",
+                                    "quantity": 30
+                                }
+                            ],
+                            "total": "989.70",
+                            "selected_delivery": "Monday, Jul 21",
+                            "selected_card": null,
+                            "config": {
+                                "omnizon": {
+                                    "latency": 0,
+                                    "hide_aria_labels": false,
+                                    "apply_discount": false,
+                                    "discount_percentage": 20,
+                                    "run_id": "KISS-1",
+                                    "task_id": "omnizon-10",
+                                    "removePopup": false
+                                }
+                            }
+                        }
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "cartDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 9,
+    "stats.cum_n_token_goal": 256,
+    "stats.max_n_token_goal": 32,
+    "stats.cum_n_token_url": 102,
+    "stats.max_n_token_url": 13,
+    "stats.cum_n_token_focused_element_bid": 8,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 42,
+    "stats.max_n_token_last_action": 6,
+    "stats.cum_n_token_last_action_error": 12,
+    "stats.max_n_token_last_action_error": 12,
+    "stats.cum_n_token_dom_txt": 334561,
+    "stats.max_n_token_dom_txt": 71192,
+    "stats.cum_n_token_axtree_txt": 22032,
+    "stats.max_n_token_axtree_txt": 5815,
+    "stats.cum_n_token_pruned_html": 159477,
+    "stats.max_n_token_pruned_html": 49113,
+    "stats.cum_n_token_agent_messages": 76309,
+    "stats.max_n_token_agent_messages": 12459,
+    "stats.cum_step_elapsed": 17.14301109313965,
+    "stats.max_step_elapsed": 6.532924175262451,
+    "stats.cum_agent_elapsed": 80.4496157169342,
+    "stats.max_agent_elapsed": 12.216238260269165,
+    "terminated": true,
+    "truncated": false
+}

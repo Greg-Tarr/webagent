@@ -1,0 +1,77 @@
+{
+    "task_name": "webclones.zilloft-9",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.zilloft-9_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 76,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.zilloft-9_587",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "hide_aria_labels": true,
+                "latency": 0,
+                "latency_response_search": 2000,
+                "run_id": "KISS-1",
+                "task_id": "zilloft-9",
+                "removePopup": false
+            },
+            "differences": {
+                "requestTours": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                },
+                "contactAgents": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                },
+                "savedHomes": {
+                    "added": {},
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 77,
+    "stats.cum_n_token_goal": 5016,
+    "stats.max_n_token_goal": 66,
+    "stats.cum_n_token_url": 908,
+    "stats.max_n_token_url": 12,
+    "stats.cum_n_token_focused_element_bid": 98,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 536,
+    "stats.max_n_token_last_action": 16,
+    "stats.cum_n_token_last_action_error": 181,
+    "stats.max_n_token_last_action_error": 181,
+    "stats.cum_n_token_dom_txt": 5890775,
+    "stats.max_n_token_dom_txt": 205308,
+    "stats.cum_n_token_axtree_txt": 534934,
+    "stats.max_n_token_axtree_txt": 19177,
+    "stats.cum_n_token_pruned_html": 5326754,
+    "stats.max_n_token_pruned_html": 197815,
+    "stats.cum_n_token_agent_messages": 1653218,
+    "stats.max_n_token_agent_messages": 79494,
+    "stats.cum_step_elapsed": 187.78978896141052,
+    "stats.max_step_elapsed": 6.309454917907715,
+    "stats.cum_agent_elapsed": 750.840943813324,
+    "stats.max_agent_elapsed": 24.192394018173218,
+    "terminated": true,
+    "truncated": false
+}

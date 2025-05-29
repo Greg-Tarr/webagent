@@ -1,0 +1,91 @@
+{
+    "task_name": "webclones.networkin-3",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.networkin-3_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 7,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.networkin-3_188",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "contactListDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "profilesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "searchHistoryDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "connectionRequestsDiff": {
+                "removed": []
+            },
+            "feedPostsDiff": {
+                "added": [
+                    {
+                        "id": "83c924dd-ecf8-414c-b394-cde45eb1c24c",
+                        "author": {
+                            "id": "svanweelden",
+                            "name": "Div Garg",
+                            "photoUrl": "/images/profiles/svanweelden.png",
+                            "details": "AGI Inc.",
+                            "timestamp": "2025-05-29T14:22:09.302Z"
+                        },
+                        "description": "\ud83c\udf1f Join us for TechConnect 2024 - A Premier Networking Event! \ud83c\udf1f\n\nI'm excited to invite you to our upcoming networking event designed to bring together industry professionals, entrepreneurs, and innovators in the tech space.\n\n\ud83d\udcc5 Date: Saturday, March 16th, 2024\n\ud83d\udd50 Time: 2:00 PM - 6:00 PM\n\ud83d\udccd Location: Innovation Hub, Downtown Tech District\n\n\ud83c\udfaf Event Purpose:\n\u2022 Connect with like-minded professionals across various tech disciplines\n\u2022 Share insights on emerging technologies and industry trends\n\u2022 Explore collaboration opportunities and partnerships\n\u2022 Learn from keynote speakers and panel discussions\n\u2022 Expand your professional network in a relaxed, engaging environment\n\n\ud83d\udc65 Target Audience:\n\u2022 Software developers and engineers\n\u2022 Product managers and designers\n\u2022 Startup founders and entrepreneurs\n\u2022 Tech executives and team leads\n\u2022 Students and recent graduates in STEM fields\n\u2022 Anyone passionate about technology and innovation\n\nThe event will feature structured networking sessions, interactive workshops, and plenty of opportunities for organic conversations. Light refreshments and networking lunch will be provided.\n\nRegister now at the link in my bio or DM me for more details! Limited spots available.\n\n#TechConnect2024 #Networking #TechCommunity #Innovation #CareerGrowth #ProfessionalDevelopment",
+                        "type": "self-post",
+                        "interactions": 0,
+                        "comments": 0,
+                        "reposts": 0
+                    }
+                ],
+                "removed": [],
+                "modified": []
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 8,
+    "stats.cum_n_token_goal": 168,
+    "stats.max_n_token_goal": 24,
+    "stats.cum_n_token_url": 84,
+    "stats.max_n_token_url": 12,
+    "stats.cum_n_token_focused_element_bid": 7,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 316,
+    "stats.max_n_token_last_action": 286,
+    "stats.cum_n_token_last_action_error": 668,
+    "stats.max_n_token_last_action_error": 668,
+    "stats.cum_n_token_dom_txt": 392140,
+    "stats.max_n_token_dom_txt": 63015,
+    "stats.cum_n_token_axtree_txt": 16178,
+    "stats.max_n_token_axtree_txt": 4039,
+    "stats.cum_n_token_pruned_html": 363096,
+    "stats.max_n_token_pruned_html": 58957,
+    "stats.cum_n_token_agent_messages": 40051,
+    "stats.max_n_token_agent_messages": 8977,
+    "stats.cum_step_elapsed": 17.35176682472229,
+    "stats.max_step_elapsed": 6.781613111495972,
+    "stats.cum_agent_elapsed": 70.61120176315308,
+    "stats.max_agent_elapsed": 20.282114028930664,
+    "terminated": true,
+    "truncated": false
+}

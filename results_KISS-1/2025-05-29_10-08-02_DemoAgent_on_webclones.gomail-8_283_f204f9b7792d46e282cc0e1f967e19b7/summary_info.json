@@ -1,0 +1,87 @@
+{
+    "task_name": "webclones.gomail-8",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.gomail-8_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 49,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.gomail-8_283",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "email_account": "fede.lopez@gmail.com",
+                "hide_aria_labels": true,
+                "latency": 2000,
+                "splash_screen_delay": 6000,
+                "run_id": "",
+                "task_id": "",
+                "removePopup": false
+            },
+            "differences": {
+                "emails": {
+                    "added": [],
+                    "deleted": [],
+                    "updated": [
+                        {
+                            "id": "3",
+                            "trash": true
+                        },
+                        {
+                            "id": "16",
+                            "starred": false,
+                            "trash": true
+                        },
+                        {
+                            "id": "37",
+                            "starred": false,
+                            "trash": true
+                        },
+                        {
+                            "id": "50",
+                            "trash": true
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 50,
+    "stats.cum_n_token_goal": 637,
+    "stats.max_n_token_goal": 13,
+    "stats.cum_n_token_url": 539,
+    "stats.max_n_token_url": 11,
+    "stats.cum_n_token_focused_element_bid": 53,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 347,
+    "stats.max_n_token_last_action": 12,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 1318199,
+    "stats.max_n_token_dom_txt": 43307,
+    "stats.cum_n_token_axtree_txt": 174602,
+    "stats.max_n_token_axtree_txt": 7698,
+    "stats.cum_n_token_pruned_html": 900235,
+    "stats.max_n_token_pruned_html": 34776,
+    "stats.cum_n_token_agent_messages": 1750568,
+    "stats.max_n_token_agent_messages": 122346,
+    "stats.cum_step_elapsed": 103.22567558288574,
+    "stats.max_step_elapsed": 6.808761119842529,
+    "stats.cum_agent_elapsed": 434.69532012939453,
+    "stats.max_agent_elapsed": 17.65921115875244,
+    "terminated": true,
+    "truncated": false
+}

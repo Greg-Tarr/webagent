@@ -1,0 +1,99 @@
+{
+    "task_name": "webclones.staynb-2",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.staynb-2_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 22,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.staynb-2_166",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {
+                    "0": {
+                        "stay": {
+                            "index": "0",
+                            "title": "Cabin in the woods",
+                            "city": "Asheville",
+                            "country": "USA",
+                            "price": 127,
+                            "averageRating": "4.00",
+                            "host": "Alexa Richardson"
+                        },
+                        "checkin": "Thu Jul 18 2024 13:00:00 GMT-0400 (Eastern Daylight Time)",
+                        "checkout": "Wed Jul 24 2024 13:00:00 GMT-0400 (Eastern Daylight Time)",
+                        "guests": "4 Guests",
+                        "pay_when": "pay-now",
+                        "card_details": {
+                            "card_number": "4242424242424242",
+                            "expiration": "12 / 28",
+                            "cvv": "123",
+                            "zipcode": "2351",
+                            "country": "United States"
+                        },
+                        "messageToHost": "Hi Alexa! We're a family of 4 (2 adults and 2 children) looking forward to our stay at your beautiful cabin. We love nature and can't wait to enjoy the peaceful woods setting. Thank you for hosting us!"
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "recentSearchesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "staynb": {
+                    "price_multiplier": 1,
+                    "latency": 0,
+                    "no_vacancy": false,
+                    "service_unavailable": false,
+                    "hide_aria_labels": false,
+                    "error_making_reservation": false,
+                    "run_id": "KISS-1",
+                    "task_id": "staynb-2",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 23,
+    "stats.cum_n_token_goal": 1034,
+    "stats.max_n_token_goal": 47,
+    "stats.cum_n_token_url": 1789,
+    "stats.max_n_token_url": 145,
+    "stats.cum_n_token_focused_element_bid": 22,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 220,
+    "stats.max_n_token_last_action": 56,
+    "stats.cum_n_token_last_action_error": 579,
+    "stats.max_n_token_last_action_error": 579,
+    "stats.cum_n_token_dom_txt": 1438157,
+    "stats.max_n_token_dom_txt": 157350,
+    "stats.cum_n_token_axtree_txt": 235510,
+    "stats.max_n_token_axtree_txt": 30781,
+    "stats.cum_n_token_pruned_html": 1206950,
+    "stats.max_n_token_pruned_html": 151511,
+    "stats.cum_n_token_agent_messages": 502292,
+    "stats.max_n_token_agent_messages": 74020,
+    "stats.cum_step_elapsed": 43.48266124725342,
+    "stats.max_step_elapsed": 7.556584119796753,
+    "stats.cum_agent_elapsed": 204.13402485847473,
+    "stats.max_agent_elapsed": 16.884104013442993,
+    "terminated": true,
+    "truncated": false
+}

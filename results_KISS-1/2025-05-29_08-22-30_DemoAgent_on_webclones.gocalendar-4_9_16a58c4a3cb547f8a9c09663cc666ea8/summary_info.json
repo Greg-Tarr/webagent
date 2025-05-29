@@ -1,0 +1,72 @@
+{
+    "task_name": "webclones.gocalendar-4",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.gocalendar-4_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 8,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.gocalendar-4_9",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "eventsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {
+                    "3h4i5j6k-7890-3456-7890-123456789905": {
+                        "title": "Project Kickoff",
+                        "location": "Zoom"
+                    }
+                }
+            },
+            "calendarsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "joinedEventsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 9,
+    "stats.cum_n_token_goal": 256,
+    "stats.max_n_token_goal": 32,
+    "stats.cum_n_token_url": 188,
+    "stats.max_n_token_url": 36,
+    "stats.cum_n_token_focused_element_bid": 13,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 58,
+    "stats.max_n_token_last_action": 13,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 202084,
+    "stats.max_n_token_dom_txt": 39180,
+    "stats.cum_n_token_axtree_txt": 10778,
+    "stats.max_n_token_axtree_txt": 3405,
+    "stats.cum_n_token_pruned_html": 158663,
+    "stats.max_n_token_pruned_html": 33774,
+    "stats.cum_n_token_agent_messages": 42899,
+    "stats.max_n_token_agent_messages": 7409,
+    "stats.cum_step_elapsed": 18.877976417541504,
+    "stats.max_step_elapsed": 6.581652879714966,
+    "stats.cum_agent_elapsed": 64.56272053718567,
+    "stats.max_agent_elapsed": 10.41377305984497,
+    "terminated": true,
+    "truncated": false
+}

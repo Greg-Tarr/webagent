@@ -1,0 +1,67 @@
+{
+    "task_name": "webclones.topwork-8",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.topwork-8_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 29,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.topwork-8_636",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "messagesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "offersDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "jobsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 30,
+    "stats.cum_n_token_goal": 261,
+    "stats.max_n_token_goal": 9,
+    "stats.cum_n_token_url": 433,
+    "stats.max_n_token_url": 19,
+    "stats.cum_n_token_focused_element_bid": 29,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 235,
+    "stats.max_n_token_last_action": 15,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 921046,
+    "stats.max_n_token_dom_txt": 57898,
+    "stats.cum_n_token_axtree_txt": 39988,
+    "stats.max_n_token_axtree_txt": 3055,
+    "stats.cum_n_token_pruned_html": 502960,
+    "stats.max_n_token_pruned_html": 32542,
+    "stats.cum_n_token_agent_messages": 330699,
+    "stats.max_n_token_agent_messages": 52828,
+    "stats.cum_step_elapsed": 64.72857928276062,
+    "stats.max_step_elapsed": 8.28416895866394,
+    "stats.cum_agent_elapsed": 248.0715847015381,
+    "stats.max_agent_elapsed": 12.690294981002808,
+    "terminated": true,
+    "truncated": false
+}

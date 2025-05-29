@@ -1,0 +1,80 @@
+{
+    "task_name": "webclones.networkin-7",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.networkin-7_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 29,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.networkin-7_722",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "contactListDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "profilesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "searchHistoryDiff": {
+                "added": {
+                    "0": {
+                        "searchTerm": "",
+                        "timestamp": "2025-05-29T14:31:37.996Z"
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "connectionRequestsDiff": {
+                "removed": []
+            },
+            "feedPostsDiff": {
+                "added": [],
+                "removed": [],
+                "modified": []
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 30,
+    "stats.cum_n_token_goal": 464,
+    "stats.max_n_token_goal": 16,
+    "stats.cum_n_token_url": 447,
+    "stats.max_n_token_url": 18,
+    "stats.cum_n_token_focused_element_bid": 31,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 181,
+    "stats.max_n_token_last_action": 11,
+    "stats.cum_n_token_last_action_error": 12,
+    "stats.max_n_token_last_action_error": 12,
+    "stats.cum_n_token_dom_txt": 992880,
+    "stats.max_n_token_dom_txt": 73999,
+    "stats.cum_n_token_axtree_txt": 67277,
+    "stats.max_n_token_axtree_txt": 5172,
+    "stats.cum_n_token_pruned_html": 697756,
+    "stats.max_n_token_pruned_html": 62737,
+    "stats.cum_n_token_agent_messages": 241938,
+    "stats.max_n_token_agent_messages": 15016,
+    "stats.cum_step_elapsed": 62.985135316848755,
+    "stats.max_step_elapsed": 7.158815145492554,
+    "stats.cum_agent_elapsed": 236.9809443950653,
+    "stats.max_agent_elapsed": 18.630748748779297,
+    "terminated": true,
+    "truncated": false
+}

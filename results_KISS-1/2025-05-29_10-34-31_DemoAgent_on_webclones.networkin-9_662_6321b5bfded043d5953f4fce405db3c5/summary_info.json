@@ -1,0 +1,109 @@
+{
+    "task_name": "webclones.networkin-9",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.networkin-9_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 11,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.networkin-9_662",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "contactListDiff": {
+                "added": {
+                    "1": {
+                        "id": "emilyjohnson",
+                        "headline": "Data Scientist",
+                        "photoUrl": "/images/profiles/emilyjohnson.png",
+                        "name": "Emily Johnson",
+                        "date": "2025-05-29T14:36:04.384Z",
+                        "expanded": false,
+                        "lastMessage": "Hi Emily! I came across your profile and was impressed by your work in data science at OpenAI. As a fellow Stanford alumnus, I'd love to connect and learn more about your experience in the field.",
+                        "lastMessageAuthor": "Div Garg",
+                        "messages": [
+                            {
+                                "id": "37d5087b-0154-49e2-8d65-0470b4b61599",
+                                "author": "Div Garg",
+                                "photoUrl": "/images/profiles/svanweelden.png",
+                                "timestamp": "2025-05-29T14:36:04.384Z",
+                                "message": "Hi Emily! I came across your profile and was impressed by your work in data science at OpenAI. As a fellow Stanford alumnus, I'd love to connect and learn more about your experience in the field.",
+                                "type": "text"
+                            }
+                        ]
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "profilesDiff": {
+                "added": {
+                    "2": {
+                        "connectionName": "Emily Johnson"
+                    }
+                },
+                "deleted": {},
+                "updated": {
+                    "2": {
+                        "connectionGrade": "1st"
+                    }
+                }
+            },
+            "searchHistoryDiff": {
+                "added": {
+                    "0": {
+                        "searchTerm": "",
+                        "timestamp": "2025-05-29T14:35:01.820Z"
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            },
+            "connectionRequestsDiff": {
+                "removed": []
+            },
+            "feedPostsDiff": {
+                "added": [],
+                "removed": [],
+                "modified": []
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 12,
+    "stats.cum_n_token_goal": 176,
+    "stats.max_n_token_goal": 16,
+    "stats.cum_n_token_url": 171,
+    "stats.max_n_token_url": 18,
+    "stats.cum_n_token_focused_element_bid": 15,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 117,
+    "stats.max_n_token_last_action": 53,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 363843,
+    "stats.max_n_token_dom_txt": 64314,
+    "stats.cum_n_token_axtree_txt": 25441,
+    "stats.max_n_token_axtree_txt": 5056,
+    "stats.cum_n_token_pruned_html": 318765,
+    "stats.max_n_token_pruned_html": 60312,
+    "stats.cum_n_token_agent_messages": 102888,
+    "stats.max_n_token_agent_messages": 13953,
+    "stats.cum_step_elapsed": 24.422940015792847,
+    "stats.max_step_elapsed": 6.757430791854858,
+    "stats.cum_agent_elapsed": 83.1067283153534,
+    "stats.max_agent_elapsed": 13.406440258026123,
+    "terminated": true,
+    "truncated": false
+}

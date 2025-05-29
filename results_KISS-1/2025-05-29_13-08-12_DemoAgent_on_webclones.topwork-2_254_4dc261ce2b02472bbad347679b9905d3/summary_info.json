@@ -1,0 +1,90 @@
+{
+    "task_name": "webclones.topwork-2",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.topwork-2_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 26,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.topwork-2_254",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "messagesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "offersDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "jobsDiff": {
+                "added": {
+                    "0": {
+                        "id": "1748538725879",
+                        "title": "Backend Developer Needed - Python/Django/Flask for High-Performance Web Application",
+                        "skills": [
+                            "Python",
+                            "Django",
+                            "Flask",
+                            "PostgreSQL",
+                            "Docker",
+                            "AWS",
+                            "CI/CD"
+                        ],
+                        "estimateSize": "large",
+                        "estimateTime": "3 to 6 months",
+                        "estimateLevelExperience": "expert",
+                        "estimateHireOpportunity": "no",
+                        "hourlyRateFrom": 80,
+                        "hourlyRateTo": 120,
+                        "fixedPrice": 0,
+                        "description": "We are seeking an expert Backend Developer to design and develop a high-performance web application using modern Python technologies.\n\n**Project Overview:**\nYou will be responsible for building a scalable, robust backend system that can handle high traffic and complex data processing requirements. This is a comprehensive development project requiring deep expertise in multiple technologies.\n\n**Required Technical Skills:**\n\u2022 Python (advanced proficiency required)\n\u2022 Django and Flask frameworks\n\u2022 PostgreSQL database design and optimization\n\u2022 Docker containerization\n\u2022 AWS cloud services and deployment\n\u2022 CI/CD pipeline implementation and management\n\n**Key Responsibilities:**\n\u2022 Design and implement high-performance backend architecture\n\u2022 Develop RESTful APIs and microservices\n\u2022 Optimize database queries and ensure data integrity\n\u2022 Set up automated testing and deployment pipelines\n\u2022 Implement security best practices\n\u2022 Ensure scalability and performance optimization\n\n**Project Timeline:**\n\u2022 Estimated duration: 3-6 months\n\u2022 Project size: Large-scale application development\n\n**What We're Looking For:**\n\u2022 Expert-level experience in Python backend development\n\u2022 Proven track record with Django and Flask\n\u2022 Strong experience with PostgreSQL optimization\n\u2022 Hands-on experience with Docker and AWS\n\u2022 Expertise in CI/CD implementation\n\u2022 Excellent communication skills and ability to work independently\n\u2022 Strong problem-solving skills and attention to detail\n\n**Budget:** $80-$120/hour based on experience and expertise\n\nWe value clear communication, regular updates, and collaborative problem-solving. If you have the skills and experience to deliver a high-quality, scalable backend solution, we'd love to hear from you!",
+                        "createdAt": "2025-05-29T17:12:05.879Z"
+                    }
+                },
+                "deleted": {},
+                "updated": {}
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 27,
+    "stats.cum_n_token_goal": 1300,
+    "stats.max_n_token_goal": 50,
+    "stats.cum_n_token_url": 336,
+    "stats.max_n_token_url": 13,
+    "stats.cum_n_token_focused_element_bid": 26,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 527,
+    "stats.max_n_token_last_action": 336,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 433366,
+    "stats.max_n_token_dom_txt": 37313,
+    "stats.cum_n_token_axtree_txt": 23027,
+    "stats.max_n_token_axtree_txt": 3155,
+    "stats.cum_n_token_pruned_html": 316078,
+    "stats.max_n_token_pruned_html": 32808,
+    "stats.cum_n_token_agent_messages": 166173,
+    "stats.max_n_token_agent_messages": 12101,
+    "stats.cum_step_elapsed": 49.51239061355591,
+    "stats.max_step_elapsed": 6.762750148773193,
+    "stats.cum_agent_elapsed": 202.61575961112976,
+    "stats.max_agent_elapsed": 18.05969524383545,
+    "terminated": true,
+    "truncated": false
+}

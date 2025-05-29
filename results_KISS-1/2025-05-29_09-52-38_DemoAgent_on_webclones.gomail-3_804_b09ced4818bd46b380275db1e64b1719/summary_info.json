@@ -1,0 +1,90 @@
+{
+    "task_name": "webclones.gomail-3",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.gomail-3_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 18,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.gomail-3_804",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "email_account": "fede.lopez@gmail.com",
+                "hide_aria_labels": true,
+                "latency": 2000,
+                "splash_screen_delay": 6000,
+                "run_id": "",
+                "task_id": "",
+                "removePopup": false
+            },
+            "differences": {
+                "emails": {
+                    "added": [
+                        {
+                            "id": "1748526981028",
+                            "from": "fede.lopez@gmail.com",
+                            "to": [
+                                "jonathan.smith@example.com"
+                            ],
+                            "subject": "Meeting Notes",
+                            "date": "2025-05-29",
+                            "time": "09:56 AM",
+                            "scheduled": false,
+                            "isRead": true,
+                            "starred": false,
+                            "selected": false,
+                            "snoozed": false,
+                            "important": false,
+                            "draft": false,
+                            "spam": false,
+                            "trash": false,
+                            "content": "<p browsergym_visibility_ratio=\"1\" bid=\"1184\" browsergym_set_of_marks=\"0\">Please find the meeting notes attached.</p>",
+                            "attachments": []
+                        }
+                    ],
+                    "deleted": [],
+                    "updated": []
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 19,
+    "stats.cum_n_token_goal": 504,
+    "stats.max_n_token_goal": 28,
+    "stats.cum_n_token_url": 198,
+    "stats.max_n_token_url": 11,
+    "stats.cum_n_token_focused_element_bid": 24,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 124,
+    "stats.max_n_token_last_action": 16,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 755122,
+    "stats.max_n_token_dom_txt": 52078,
+    "stats.cum_n_token_axtree_txt": 120831,
+    "stats.max_n_token_axtree_txt": 7899,
+    "stats.cum_n_token_pruned_html": 601226,
+    "stats.max_n_token_pruned_html": 43476,
+    "stats.cum_n_token_agent_messages": 810235,
+    "stats.max_n_token_agent_messages": 120398,
+    "stats.cum_step_elapsed": 42.73447632789612,
+    "stats.max_step_elapsed": 7.07042670249939,
+    "stats.cum_agent_elapsed": 192.13194012641907,
+    "stats.max_agent_elapsed": 14.94867205619812,
+    "terminated": true,
+    "truncated": false
+}

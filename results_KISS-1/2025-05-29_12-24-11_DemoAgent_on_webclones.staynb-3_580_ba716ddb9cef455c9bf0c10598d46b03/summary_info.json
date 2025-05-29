@@ -1,0 +1,75 @@
+{
+    "task_name": "webclones.staynb-3",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.staynb-3_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 19,
+    "cum_reward": 1.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": true,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.staynb-3_580",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "bookingDetailsDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "recentSearchesDiff": {
+                "added": {},
+                "deleted": {},
+                "updated": {}
+            },
+            "config": {
+                "staynb": {
+                    "price_multiplier": 1,
+                    "latency": 0,
+                    "no_vacancy": false,
+                    "service_unavailable": false,
+                    "hide_aria_labels": false,
+                    "error_making_reservation": false,
+                    "run_id": "KISS-1",
+                    "task_id": "staynb-3",
+                    "removePopup": false
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 20,
+    "stats.cum_n_token_goal": 437,
+    "stats.max_n_token_goal": 23,
+    "stats.cum_n_token_url": 209,
+    "stats.max_n_token_url": 11,
+    "stats.cum_n_token_focused_element_bid": 19,
+    "stats.max_n_token_focused_element_bid": 1,
+    "stats.cum_n_token_last_action": 170,
+    "stats.max_n_token_last_action": 14,
+    "stats.cum_n_token_last_action_error": 0,
+    "stats.max_n_token_last_action_error": 0,
+    "stats.cum_n_token_dom_txt": 2977764,
+    "stats.max_n_token_dom_txt": 157350,
+    "stats.cum_n_token_axtree_txt": 583035,
+    "stats.max_n_token_axtree_txt": 30781,
+    "stats.cum_n_token_pruned_html": 2869102,
+    "stats.max_n_token_pruned_html": 151511,
+    "stats.cum_n_token_agent_messages": 4025769,
+    "stats.max_n_token_agent_messages": 429585,
+    "stats.cum_step_elapsed": 37.20118045806885,
+    "stats.max_step_elapsed": 6.820825099945068,
+    "stats.cum_agent_elapsed": 431.6930046081543,
+    "stats.max_agent_elapsed": 37.17771005630493,
+    "terminated": true,
+    "truncated": false
+}

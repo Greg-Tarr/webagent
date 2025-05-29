@@ -1,0 +1,300 @@
+{
+    "task_name": "webclones.fly-unified-9",
+    "agent_type": "DemoAgent",
+    "model_name": "unknown",
+    "max_steps": 120,
+    "leaderboard": true,
+    "cache_key": "webclones.fly-unified-9_DemoAgent_unknown_120_leaderboard",
+    "experiment_status": "completed",
+    "run_uuid": "KISS-1",
+    "n_steps": 58,
+    "cum_reward": 0.0,
+    "cum_raw_reward": 0,
+    "err_msg": null,
+    "stack_trace": null,
+    "completed": true,
+    "success": false,
+    "error": false,
+    "score": 0.0,
+    "task_id": "webclones.fly-unified-9_691",
+    "agent_response": "",
+    "finish_state": {
+        "env_state": {
+            "config": {
+                "hide_aria_labels": true,
+                "latency": 0,
+                "delay_after_redirecting_home": 3000,
+                "display_bkg_img_duration": 8000,
+                "simulating_booking_flight": 6000,
+                "run_id": "KISS-1",
+                "task_id": "fly-unified-9",
+                "removePopup": false
+            },
+            "differences": {
+                "bookedFlights": {
+                    "added": {
+                        "0": {
+                            "cartId": "1a78cf43-e6ac-45f3-bd94-1576b0cfc794",
+                            "countPassengers": 1,
+                            "passengersInfo": [
+                                {
+                                    "firstName": "David",
+                                    "lastName": "Lee",
+                                    "middleName": "",
+                                    "dateOfBirth": {
+                                        "month": "7",
+                                        "day": "22",
+                                        "year": "1985"
+                                    },
+                                    "gender": "Male",
+                                    "suffix": "",
+                                    "frequentFlyerProgram": "",
+                                    "frequentFlyerNumber": "",
+                                    "selectedSeat": {
+                                        "outbound": {
+                                            "seat": "",
+                                            "price": 0
+                                        }
+                                    }
+                                }
+                            ],
+                            "flight": {
+                                "outboundFlight": {
+                                    "info": {
+                                        "flightId": "d8b884f5181a413061befce2de34699f",
+                                        "from": {
+                                            "destination": {
+                                                "city": "San Francisco",
+                                                "state": "CA",
+                                                "country": "US",
+                                                "code": "SFO"
+                                            },
+                                            "date": "2024-12-18T13:55:00.000Z"
+                                        },
+                                        "to": {
+                                            "destination": {
+                                                "city": "Chicago",
+                                                "state": "IL",
+                                                "country": "US",
+                                                "code": "ORD"
+                                            },
+                                            "date": "2024-12-18T17:23:00.000Z"
+                                        },
+                                        "stops": 0,
+                                        "segments": [
+                                            {
+                                                "departureTime": "2024-12-18T13:55:00.000Z",
+                                                "arrivalTime": "2024-12-18T17:23:00.000Z",
+                                                "departureCode": "SFO",
+                                                "arrivalCode": "ORD",
+                                                "duration": "3h 28m",
+                                                "airline": "Airlines",
+                                                "flightNumber": "UA330",
+                                                "aircraft": "Boeing 777-200",
+                                                "cabinClass": "Economy",
+                                                "meal": "Dinner",
+                                                "amenities": [
+                                                    "WiFi",
+                                                    "Entertainment"
+                                                ],
+                                                "notes": []
+                                            }
+                                        ],
+                                        "prices": {
+                                            "Basic Economy": {
+                                                "basePrice": 195,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 215.29
+                                            },
+                                            "Economy": {
+                                                "basePrice": 245,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 265.29
+                                            },
+                                            "Premium Economy": {
+                                                "basePrice": 345,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 365.29
+                                            },
+                                            "Business": {
+                                                "basePrice": 445,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 465.29
+                                            },
+                                            "First": {
+                                                "basePrice": 595,
+                                                "taxesAndFees": [
+                                                    {
+                                                        "label": "U.S. Transportation Tax",
+                                                        "amount": 5.19
+                                                    },
+                                                    {
+                                                        "label": "U.S. Passenger Facility Charge",
+                                                        "amount": 4.5
+                                                    },
+                                                    {
+                                                        "label": "U.S. Flight Segment Tax",
+                                                        "amount": 5
+                                                    },
+                                                    {
+                                                        "label": "Passenger Civil Aviation Security Service Fee",
+                                                        "amount": 5.6
+                                                    }
+                                                ],
+                                                "totalPrice": 615.29
+                                            }
+                                        }
+                                    },
+                                    "selectedPrice": {
+                                        "type": "Basic Economy",
+                                        "price": {
+                                            "basePrice": 195,
+                                            "taxesAndFees": [
+                                                {
+                                                    "label": "U.S. Transportation Tax",
+                                                    "amount": 5.19
+                                                },
+                                                {
+                                                    "label": "U.S. Passenger Facility Charge",
+                                                    "amount": 4.5
+                                                },
+                                                {
+                                                    "label": "U.S. Flight Segment Tax",
+                                                    "amount": 5
+                                                },
+                                                {
+                                                    "label": "Passenger Civil Aviation Security Service Fee",
+                                                    "amount": 5.6
+                                                }
+                                            ],
+                                            "totalPrice": 215.29
+                                        }
+                                    }
+                                }
+                            },
+                            "travelOptionBundle": {
+                                "outbound": null,
+                                "return": null
+                            },
+                            "tripInsurance": null,
+                            "finalPrice": "215.29",
+                            "paymentInfo": {
+                                "paymentMethod": "",
+                                "cardNumber": "9999 8888 7777",
+                                "expDate": "03/30",
+                                "securityCode": "123",
+                                "nameOnCard": "David Lee",
+                                "billingAddress1": "987 Cedar St",
+                                "billingAddress2": "",
+                                "city": "Chicago",
+                                "state": "IL",
+                                "zip": "60601",
+                                "country": "United States",
+                                "countryCode": "+1",
+                                "phoneNumber": "555-987-1234",
+                                "email": "davidlee@example.com"
+                            }
+                        }
+                    },
+                    "deleted": {},
+                    "updated": {}
+                }
+            }
+        }
+    },
+    "eval_results": [],
+    "env_setup_error": null,
+    "stats.cum_steps": 59,
+    "stats.cum_n_token_goal": 6496,
+    "stats.max_n_token_goal": 112,
+    "stats.cum_n_token_url": 2298,
+    "stats.max_n_token_url": 905,
+    "stats.cum_n_token_focused_element_bid": 103,
+    "stats.max_n_token_focused_element_bid": 2,
+    "stats.cum_n_token_last_action": 480,
+    "stats.max_n_token_last_action": 18,
+    "stats.cum_n_token_last_action_error": 735,
+    "stats.max_n_token_last_action_error": 192,
+    "stats.cum_n_token_dom_txt": 2588068,
+    "stats.max_n_token_dom_txt": 89783,
+    "stats.cum_n_token_axtree_txt": 178402,
+    "stats.max_n_token_axtree_txt": 18434,
+    "stats.cum_n_token_pruned_html": 1778455,
+    "stats.max_n_token_pruned_html": 75908,
+    "stats.cum_n_token_agent_messages": 2582701,
+    "stats.max_n_token_agent_messages": 166818,
+    "stats.cum_step_elapsed": 108.82311224937439,
+    "stats.max_step_elapsed": 6.917279005050659,
+    "stats.cum_agent_elapsed": 546.6691658496857,
+    "stats.max_agent_elapsed": 36.55663585662842,
+    "terminated": true,
+    "truncated": false
+}

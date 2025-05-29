@@ -34,3 +34,6 @@ where = ["src"]
 [tool.pyright]
 venvPath = "."
 venv = ".venv"
+
+[tool.ruff]
+ignore = ["C901"]

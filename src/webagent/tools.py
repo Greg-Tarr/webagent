@@ -44,28 +44,28 @@ TOOLS = [
             "required": ["bid", "value"]
         }
     },
-    {
-        "name": "check",
-        "description": "Ensure a checkbox or radio element is checked. Example: check('55')",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "bid": {"type": "string", "description": "The browser ID of the checkbox/radio element to check"}
-            },
-            "required": ["bid"]
-        }
-    },
-    {
-        "name": "uncheck",
-        "description": "Ensure a checkbox or radio element is unchecked. Example: uncheck('a5289')",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "bid": {"type": "string", "description": "The browser ID of the checkbox/radio element to uncheck"}
-            },
-            "required": ["bid"]
-        }
-    },
+    # {
+    #     "name": "check",
+    #     "description": "Ensure a checkbox or radio element is checked. Example: check('55')",
+    #     "input_schema": {
+    #         "type": "object",
+    #         "properties": {
+    #             "bid": {"type": "string", "description": "The browser ID of the checkbox/radio element to check"}
+    #         },
+    #         "required": ["bid"]
+    #     }
+    # },
+    # {
+    #     "name": "uncheck",
+    #     "description": "Ensure a checkbox or radio element is unchecked. Example: uncheck('a5289')",
+    #     "input_schema": {
+    #         "type": "object",
+    #         "properties": {
+    #             "bid": {"type": "string", "description": "The browser ID of the checkbox/radio element to uncheck"}
+    #         },
+    #         "required": ["bid"]
+    #     }
+    # },
     {
         "name": "select_option",
         "description": "Select one or multiple options in a <select> element. You can specify option value or label to select. Examples: select_option('a48', 'blue'), select_option('c48', ['red', 'green', 'blue'])",
@@ -312,6 +312,97 @@ TOOLS = [
         }
     },
     {
+        "name": "refresh",
+        "description": "Refresh/reload the current page. Example: refresh(). Useful if some pages don't load correctly, e.g. skeletons persist. Might take multiple refreshes (rare).",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
+    },
+    {
+        "name": "upload_file",
+        "description": "Click an element and wait for a filechooser event, then select one or multiple input files for upload. Examples: upload_file('572', 'my_receipt.pdf'), upload_file('63', ['/home/bob/Documents/image.jpg', '/home/bob/Documents/file.zip'])",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "bid": {"type": "string", "description": "The browser ID of the file input element"},
+                "file": {
+                    "oneOf": [
+                        {"type": "string", "description": "Single file path"},
+                        {"type": "array", "items": {"type": "string"}, "description": "Multiple file paths"}
+                    ]
+                }
+            },
+            "required": ["bid", "file"]
+        }
+    },
+    {
+        "name": "mouse_upload_file",
+        "description": "Click a location and wait for a filechooser event, then select one or multiple input files for upload. Examples: mouse_upload_file(132.1, 547, 'my_receipt.pdf'), mouse_upload_file(328, 812, ['/home/bob/Documents/image.jpg', '/home/bob/Documents/file.zip'])",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "x": {"type": "number", "description": "X coordinate in pixels"},
+                "y": {"type": "number", "description": "Y coordinate in pixels"},
+                "file": {
+                    "oneOf": [
+                        {"type": "string", "description": "Single file path"},
+                        {"type": "array", "items": {"type": "string"}, "description": "Multiple file paths"}
+                    ]
+                }
+            },
+            "required": ["x", "y", "file"]
+        }
+    },
+    {
+        "name": "go_back",
+        "description": "Navigate to the previous page in history. Example: go_back()",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
+    },
+    {
+        "name": "go_forward",
+        "description": "Navigate to the next page in history. Example: go_forward()",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
+    },
+    {
+        "name": "new_tab",
+        "description": "Open a new tab. It will become the active one. Example: new_tab()",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
+    },
+    {
+        "name": "tab_close",
+        "description": "Close the current tab. Example: tab_close()",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
+    },
+    {
+        "name": "tab_focus",
+        "description": "Bring tab to front (activate tab). Example: tab_focus(2)",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "index": {"type": "integer", "description": "Index of the tab to focus (0-based)"}
+            },
+            "required": ["index"]
+        }
+    },
+    {
         "name": "goto",
         "description": "Navigate to a url. Example: goto('http://www.example.com')",
         "input_schema": {
@@ -321,5 +412,14 @@ TOOLS = [
             },
             "required": ["url"]
         }
-    }
+    },
+    {
+        "name": "take_screenshot",
+        "description": "Take a screenshot of the current page. Useful for visual inspection when elements are not behaving as expected or when you need to see the current visual state.",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
+    },
 ]

@@ -687,7 +687,7 @@ if __name__ == "__main__":
         headless=False,
         max_steps=999,
         leaderboard=False,
-        run_id="None",
+        run_id="KISS-1",
     )
 
     results = harness.run()

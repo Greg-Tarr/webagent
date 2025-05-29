@@ -7,7 +7,6 @@
 *.tmp
 *.pkl
 *.gz
-
 .archive
 .venv
 .env
@@ -25,4 +24,4 @@ playwright
 results
 logs/
 
-!results_KISS-1/**/*.json
+!results_KISS-1/**

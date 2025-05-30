@@ -1,3 +1,4 @@
+import copy
 import os
 import time
 os.environ['TZ'] = 'America/New_York'
@@ -17,7 +18,7 @@ from agisdk import REAL
 from agisdk.REAL import AbstractAgentArgs, Agent
 from agisdk.REAL.browsergym import HighLevelActionSet
 from agisdk.REAL.browsergym.experiments import AgentInfo
-from anthropic.types import ContentBlock, Message, MessageParam
+from anthropic.types import ContentBlock, Message, MessageParam, ToolUseBlock
 from dotenv import load_dotenv
 import anthropic
 
@@ -77,6 +78,35 @@ This is important because page state is removed over time to save context space,
 There is always a "correct" path to take. Sometimes it's not obvious, for example, filling in a form in a search result instead of clicking into the result and filling it out there.
 """
 
+PROMPT_REMINDER = """\
+<important>
+Remember:
+- double check your work before proceeding,
+- think "is there anything wrong with the current state?" if the answer is yes, revert using go_back and try a different approach
+- do not proceed if you have made a mistake.
+- if you have made a mistake, revert using go_back and try a different approach
+- there are no display issues, rely on the screen and not information in the url (the url may be incorrect).
+- be liberal with your reversions, you have one chance, so navigating backwards is fine.
+- the final result has to be exactly correct, exactly! if it's even slightly wrong you should start over
+- a different approach could be as simple as navigating to a page instead of clicking an easily accessible button!
+- for example, if you can see what you're looking for, why not click it instead of searching for it?
+- if skeletons are showing, or something is missing or showing, reload the page!
+- do not use send_msg_to_user until the very end.
+- for date pickers or dropdowns, use 'click' instead of 'fill'
+- don't do things more than twice, try different approaches, think "is there any other way to achieve the same result?"
+- feel free to explore
+- feel free to make liberal use of goto() in order to clear url params if they are hindering your progress
+- some tasks are searches through many items, in that case, before analyzing a specific item, click next buttons or pagination options to count the total number of unique items. you MUST do this first AND last.
+- your first actions should be exploratory, e.g. clicking 'next slide' or 'next page' until you've itemized everything in memory.
+- do not assume that the number of items on the page is the total catalogue
+- it's good practice to take a screenshot before submitting just in case there's a visual difference, even if the answer is clear ESPECIALLY when it comes to flights!
+
+Finally, and perhaps the most importantly, if you need to remember something, write it into your response (either thinking or user response).
+This is important because page state is removed over time to save context space, so if you need to remember URLs for example, write them down and you can use them in a goto() later.
+</important>"""
+    
+
+
 def generate_axtree_diff(previous_axtree: str | None, current_axtree: str, change_threshold: float = 0.7) -> str:
     """
     Generate a git-style diff between two axtree states.
@@ -130,18 +160,18 @@ class GTAgent(Agent):
         )
         
         self.client = anthropic.Anthropic()
-        self.conversation_history: list[MessageParam] = []
+        self.conversation_history: list[dict] = []
         self.previous_axtree: str | None = None
         self.iteration_count = 0
 
-    def query_model(self, obs: Any) -> tuple[str, ContentBlock | None, MessageParam]:
+    def query_model(self, obs: Any) -> tuple[str, ContentBlock | None, dict]:
         self.iteration_count += 1
     
         # Handle last tool's result
         if self.conversation_history:
             last_message = self.conversation_history[-1]
             if isinstance(last_message.get('content'), list):
-                last_tool_use = next(
+                last_tool_use: Any = next(
                     (block for block in last_message['content'] 
                      if (hasattr(block, 'type') and block.type == 'tool_use') or 
                         (isinstance(block, dict) and block.get('type') == 'tool_use')),
@@ -213,40 +243,11 @@ class GTAgent(Agent):
     
         important_section = ""
         if self.iteration_count % 3 == 1:
-            important_section = """\
-<important>
-Remember:
-- double check your work before proceeding,
-- think "is there anything wrong with the current state?" if the answer is yes, revert using go_back and try a different approach
-- do not proceed if you have made a mistake.
-- if you have made a mistake, revert using go_back and try a different approach
-- there are no display issues, rely on the screen and not information in the url (the url may be incorrect).
-- be liberal with your reversions, you have one chance, so navigating backwards is fine.
-- the final result has to be exactly correct, exactly! if it's even slightly wrong you should start over
-- a different approach could be as simple as navigating to a page instead of clicking an easily accessible button!
-- for example, if you can see what you're looking for, why not click it instead of searching for it?
-- if skeletons are showing, or something is missing or showing, reload the page!
-- do not use send_msg_to_user until the very end.
-- for date pickers or dropdowns, use 'click' instead of 'fill'
-- don't do things more than twice, try different approaches, think "is there any other way to achieve the same result?"
-- feel free to explore
-- feel free to make liberal use of goto() in order to clear url params if they are hindering your progress
-- some tasks are searches through many items, in that case, before analyzing a specific item, click next buttons or pagination options to count the total number of unique items. you MUST do this first AND last.
-- your first actions should be exploratory, e.g. clicking 'next slide' or 'next page' until you've itemized everything in memory.
-- do not assume that the number of items on the page is the total catalogue
-- it's good practice to take a screenshot before submitting just in case there's a visual difference, even if the answer is clear ESPECIALLY when it comes to flights!
-
-Finally, and perhaps the most importantly, if you need to remember something, write it into your response (either thinking or user response).
-This is important because page state is removed over time to save context space, so if you need to remember URLs for example, write them down and you can use them in a goto() later.
-</important>"""
+            important_section = PROMPT_REMINDER
     
         # Create current message
-        current_message = f"""\
-<goal>{obs['goal']}</goal>
-{state_tag}
-{important_section}
-"""
-        user_message: MessageParam = {
+        current_message = f"""<goal>{obs['goal']}</goal>\n{state_tag}\n{important_section}"""
+        user_message = {
             "role": "user",
             "content": [{"type": "text", "text": current_message}]
         }
@@ -255,7 +256,9 @@ This is important because page state is removed over time to save context space,
             tool for tool in TOOLS 
             if tool["name"] in self.action_set.action_set.keys()  # pyright: ignore
         ]
-    
+        
+        messages_cachable = copy.deepcopy(messages)
+        messages_cachable[-1]["content"][0]["cache_control"] = {"type": "ephemeral"} # pyright: ignore
         response = self.client.messages.create(
             model="claude-sonnet-4-20250514",
             max_tokens=20000,
@@ -269,14 +272,14 @@ This is important because page state is removed over time to save context space,
                 "text": INSTRUCTIONS,
                 "cache_control": {"type": "ephemeral"}
             }],
-            messages=messages,
+            messages=messages_cachable, # pyright: ignore
             tool_choice={"type": "auto"},
             tools=available_tools # pyright: ignore
         )
         print_usage(response.usage)
         action = message_to_action_str(response)
         
-        response_blocks: MessageParam = {
+        response_blocks = {
             "role": "assistant",
             "content": response.content
         }
@@ -331,7 +334,10 @@ if __name__ == "__main__":
         leaderboard=True,
         run_id="KISS-1",
         # results_dir="demo_results",
-        cache_only=True
+        results_dir="tmp/leaderboard-1",
+        cache_only=False,
+        
+        task_type="omnizon",
     )
     # harness.env_args["record_video"] = True
 

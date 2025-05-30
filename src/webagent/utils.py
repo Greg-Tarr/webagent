@@ -5,7 +5,7 @@ from datetime import datetime
 
 import numpy as np
 from PIL import Image
-from anthropic.types import Message, MessageParam
+from anthropic.types import Message
 
 def message_to_action_str(message: Message) -> str:
     # Find the tool_use block in the message content
@@ -105,7 +105,7 @@ def print_usage(usage):
     if usage.cache_read_input_tokens:
         print(f"Cache read input tokens: {usage.cache_read_input_tokens}")
 
-def save_history_to_txt(agent_id: str, conversation_history: list[MessageParam], filename: str = "conversation_history.txt"):
+def save_history_to_txt(agent_id: str, conversation_history: list[dict], filename: str = "conversation_history.txt"):
     """Save conversation history to a text file in a folder structure based on agent_id."""
     # Create folder structure: logs/agent_id/filename
     log_dir = os.path.join("logs", agent_id)
@@ -166,7 +166,7 @@ def save_history_to_txt(agent_id: str, conversation_history: list[MessageParam],
 
             f.write("\n")
 
-def flatten_conversation_history(conversation_history: list[MessageParam]) -> list[MessageParam]:
+def flatten_conversation_history(conversation_history: list[dict]) -> list[dict]:
     """Flatten nested conversation history to make it compatible with agisdk."""
     flattened = []
 
@@ -196,7 +196,7 @@ def flatten_conversation_history(conversation_history: list[MessageParam]) -> li
                         result_content = block.get('content', '')
                         text_parts.append(f"Result: {result_content}")
 
-            flattened_message: MessageParam = {
+            flattened_message = {
                 "role": message["role"],
                 "content": "\n".join(text_parts)
             }
@@ -224,7 +224,7 @@ def image_to_base64_url(image: np.ndarray) -> str:
 
     return f"data:image/jpeg;base64,{image_base64}"
 
-def purge_old_tags(conversation_history: list[MessageParam], iterations_to_keep: int = 5, current_has_reset: bool = False) -> list[MessageParam]:
+def purge_old_tags(conversation_history: list[dict], iterations_to_keep: int = 5, current_has_reset: bool = False) -> list[dict]:
     """
     Replace goal and important tags older than specified iterations with placeholder text.
     Remove old images to prevent memory bloat.
@@ -361,7 +361,7 @@ def purge_old_tags(conversation_history: list[MessageParam], iterations_to_keep:
                     new_content.append(block)
             
             if new_content:  # Only add message if it has content left
-                purged_message: MessageParam = {
+                purged_message = {
                     "role": message["role"],
                     "content": new_content
                 }

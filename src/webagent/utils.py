@@ -1,3 +1,4 @@
+import re
 import os
 import base64
 import io
@@ -226,25 +227,20 @@ def image_to_base64_url(image: np.ndarray) -> str:
 
 def purge_old_tags(conversation_history: list[dict], iterations_to_keep: int = 5, current_has_reset: bool = False) -> list[dict]:
     """
-    Replace goal and important tags older than specified iterations with placeholder text.
+    Find the last full page reset and remove all tags before it.
     Remove old images to prevent memory bloat.
-    Only replace state tags if we've had a full page reset (full_reset=True) or current_has_reset=True.
+    Keep all tags from the last full reset onwards since they're relevant to current page.
     """
-    # Count assistant messages (iterations) from the end
-    assistant_count = 0
-    cutoff_index = len(conversation_history)
     
-    for i in range(len(conversation_history) - 1, -1, -1):
-        if conversation_history[i].get('role') == 'assistant':
-            assistant_count += 1
-            if assistant_count >= iterations_to_keep:
-                cutoff_index = i
-                break
+    # Find the index of the last full page reset
+    last_reset_index = -1
     
-    # Check if we have a full reset state tag in recent messages OR current iteration has reset
-    has_full_reset = current_has_reset
-    if not has_full_reset:
-        for i in range(cutoff_index, len(conversation_history)):
+    # If current iteration has a reset, that's our cutoff point
+    if current_has_reset:
+        last_reset_index = len(conversation_history)
+    else:
+        # Scan backwards to find the last full_reset=True
+        for i in range(len(conversation_history) - 1, -1, -1):
             message = conversation_history[i]
             if message.get('role') == 'user' and isinstance(message.get('content'), list):
                 for block in message['content']:
@@ -256,34 +252,39 @@ def purge_old_tags(conversation_history: list[dict], iterations_to_keep: int = 5
                         continue
                     
                     if '<state full_reset=True>' in text:
-                        has_full_reset = True
+                        last_reset_index = i
                         break
-                if has_full_reset:
+                
+                if last_reset_index != -1:
                     break
     
-    # Process messages
+    # If no reset found, keep everything
+    if last_reset_index == -1:
+        return conversation_history
+    
+    # Process messages: purge tags before last_reset_index, keep everything after
     purged_history = []
     
     for i, message in enumerate(conversation_history):
         if message.get('role') == 'user' and isinstance(message.get('content'), list):
             new_content = []
+            should_purge_tags = i < last_reset_index
+            
             for block in message['content']:
-                # Handle tool_result blocks specially
+                # Handle tool_result blocks
                 if isinstance(block, dict) and block.get('type') == 'tool_result':
-                    if i < cutoff_index:  # Old message
-                        # Check if tool_result contains images
+                    if should_purge_tags:
+                        # Remove images from old tool results, keep text
                         content = block.get('content', [])
                         if isinstance(content, list):
-                            # Remove images from old tool results, keep text
                             filtered_content = []
                             for item in content:
                                 if isinstance(item, dict) and item.get('type') == 'image':
-                                    # Skip old images
-                                    continue
+                                    continue  # Skip old images
                                 else:
                                     filtered_content.append(item)
                             
-                            if filtered_content:  # Only keep if there's still content
+                            if filtered_content:
                                 new_block = block.copy()
                                 new_block['content'] = filtered_content
                                 new_content.append(new_block)
@@ -294,73 +295,44 @@ def purge_old_tags(conversation_history: list[dict], iterations_to_keep: int = 5
                         # Recent message, keep all tool results including images
                         new_content.append(block)
                 
-                # Handle direct image blocks (if any exist at top level)
+                # Handle direct image blocks
                 elif (hasattr(block, 'type') and block.type == 'image') or \
                      (isinstance(block, dict) and block.get('type') == 'image'):
-                    if i >= cutoff_index:  # Only keep recent images
+                    if not should_purge_tags:  # Only keep recent images
                         new_content.append(block)
-                    # Old images are dropped (not added to new_content)
                 
                 # Handle text blocks with tag replacement
                 elif hasattr(block, 'type') and block.type == 'text':
                     text = getattr(block, 'text', '')
                     block_dict = {"type": "text", "text": text}
                     
-                    # Only process messages older than the cutoff
-                    if i < cutoff_index:
-                        # Replace old goal tags with placeholder
-                        if '<goal>' in text and '</goal>' in text:
-                            import re
-                            text = re.sub(r'<goal>.*?</goal>', '<goal>old info, removed</goal>', text, flags=re.DOTALL)
-                            block_dict['text'] = text
-                        
-                        # Replace old important tags with placeholder
-                        if '<important>' in text and '</important>' in text:
-                            import re
-                            text = re.sub(r'<important>.*?</important>', '<important>old info, removed</important>', text, flags=re.DOTALL)
-                            block_dict['text'] = text
-                        
-                        # Replace old state tags only if we have a full reset
-                        if has_full_reset and '<state' in text and '</state>' in text:
-                            import re
-                            text = re.sub(r'<state[^>]*>.*?</state>', '<state>old info, removed</state>', text, flags=re.DOTALL)
-                            block_dict['text'] = text
+                    if should_purge_tags:
+                        # Replace ALL tags in old messages
+                        text = re.sub(r'<goal>.*?</goal>', '<goal>old info, removed</goal>', text, flags=re.DOTALL)
+                        text = re.sub(r'<important>.*?</important>', '<important>old info, removed</important>', text, flags=re.DOTALL)
+                        text = re.sub(r'<state[^>]*>.*?</state>', '<state>old info, removed</state>', text, flags=re.DOTALL)
+                        block_dict['text'] = text
                     
-                    # Add the (possibly modified) text block
                     new_content.append(block_dict)
                 
                 elif isinstance(block, dict) and block.get('type') == 'text':
                     text = block.get('text', '')
                     block_dict = block.copy()
                     
-                    # Only process messages older than the cutoff
-                    if i < cutoff_index:
-                        # Replace old goal tags with placeholder
-                        if '<goal>' in text and '</goal>' in text:
-                            import re
-                            text = re.sub(r'<goal>.*?</goal>', '<goal>old info, removed</goal>', text, flags=re.DOTALL)
-                            block_dict['text'] = text
-                        
-                        # Replace old important tags with placeholder
-                        if '<important>' in text and '</important>' in text:
-                            import re
-                            text = re.sub(r'<important>.*?</important>', '<important>old info, removed</important>', text, flags=re.DOTALL)
-                            block_dict['text'] = text
-                        
-                        # Replace old state tags only if we have a full reset
-                        if has_full_reset and '<state' in text and '</state>' in text:
-                            import re
-                            text = re.sub(r'<state[^>]*>.*?</state>', '<state>old info, removed</state>', text, flags=re.DOTALL)
-                            block_dict['text'] = text
+                    if should_purge_tags:
+                        # Replace ALL tags in old messages
+                        text = re.sub(r'<goal>.*?</goal>', '<goal>old info, removed</goal>', text, flags=re.DOTALL)
+                        text = re.sub(r'<important>.*?</important>', '<important>old info, removed</important>', text, flags=re.DOTALL)
+                        text = re.sub(r'<state[^>]*>.*?</state>', '<state>old info, removed</state>', text, flags=re.DOTALL)
+                        block_dict['text'] = text
                     
-                    # Add the (possibly modified) text block
                     new_content.append(block_dict)
                 
                 else:
-                    # Keep other block types as is (but we've handled the main ones above)
+                    # Keep other block types as is
                     new_content.append(block)
             
-            if new_content:  # Only add message if it has content left
+            if new_content:
                 purged_message = {
                     "role": message["role"],
                     "content": new_content

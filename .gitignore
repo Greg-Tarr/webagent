@@ -26,3 +26,4 @@ logs/
 
 !results/**
 .DS_Store
+tmp/

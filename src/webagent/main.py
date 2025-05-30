@@ -33,6 +33,7 @@ Review the current state of the page and all other information to find the best
 possible next action to accomplish your goal. Your answer will be interpreted
 and executed by a program, make sure to follow the formatting instructions.
 When you are finished, return to the user (via the send_msg_to_user function) the result of your actions.
+Do everything it says in the goal (if it says make a purchase, make the purchase, the user cannot do anything for themselves)
 It is critical you think about each step in the section below in EVERY thinking process. Be verbose, timid, self-doubting and exceptionally careful.
 
 User Details (for any forms that say "you can put in anything you'd like", otherwise use the details stated in 'goal')
@@ -133,7 +134,6 @@ def generate_axtree_diff(previous_axtree: str | None, current_axtree: str, chang
         current_lines,
         fromfile="previous_state",
         tofile="current_state",
-        lineterm=""
     )
     
     diff_text = ''.join(diff)
@@ -155,13 +155,13 @@ class GTAgent(Agent):
             custom_actions=[refresh, take_screenshot],
             strict=False,
             multiaction=False,
-            demo_mode="off",
-            # demo_mode="default",
+            # demo_mode="off",
+            demo_mode="default",
         )
         
         self.client = anthropic.Anthropic()
         self.conversation_history: list[dict] = []
-        self.previous_axtree: str | None = None
+        self.previous_axtree: str | None = ""
         self.iteration_count = 0
 
     def query_model(self, obs: Any) -> tuple[str, ContentBlock | None, dict]:
@@ -308,8 +308,6 @@ class GTAgent(Agent):
         print(f"Action: {action}")
         
         self.finished = "send_msg_to_user" in action or any(phrase in action.lower() for phrase in ["complete", "done", "finished", "goal accomplished"])
-        print(f"Finished: {self.finished}")
-        
         return action, AgentInfo(
             think=thinking_block.thinking if thinking_block else "", # pyright: ignore
             chat_messages=flatten_conversation_history(self.conversation_history)
@@ -329,16 +327,15 @@ if __name__ == "__main__":
     
     harness = REAL.harness(
         agentargs=agent_args,
-        headless=False,
+        headless=True,
         max_steps=120,
         leaderboard=True,
         run_id="KISS-1",
         # results_dir="demo_results",
-        results_dir="tmp/leaderboard-1",
+        results_dir="tmp/leaderboard-2",
         cache_only=False,
-        
-        task_type="omnizon",
+        task_type="networkin",
     )
-    # harness.env_args["record_video"] = True
+    harness.env_args["record_video"] = True
 
     results = harness.run()

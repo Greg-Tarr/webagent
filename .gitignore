@@ -21,8 +21,8 @@ dist/
 3rdparty/
 playwright
 .ropeproject
-results
+results_tmp
 logs/
 
-!results_KISS-1/**
+!results/**
 .DS_Store

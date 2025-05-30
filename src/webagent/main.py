@@ -68,6 +68,7 @@ Remember:
 - your first actions should be exploratory, e.g. clicking 'next slide' or 'next page' until you've itemized everything in memory.
 - do not assume that the number of items on the page is the total catalogue
 - if you are stuck on a specific element, e.g. a button appears as static text rather than clickable, it may be worth taking a screenshot and then using coordinates, but use it sparingly
+- if you have already submitted (i.e. sent an email, or bought something), do not attempt to submit again
 
 Finally, and perhaps the most importantly, if you need to remember something, write it into your response (either thinking or user response).
 This is important because page state is removed over time to save context space, so if you need to remember URLs for example, write them down and you can use them in a goto() later.
@@ -110,10 +111,6 @@ def message_to_action_str(message: Message) -> str:
     return "send_msg_to_user(text=\"No action needed.\")"
 
 def print_context(tools, messages):
-    # print("Available tools:")
-    # for tool in tools:
-    #     print(f"  - {tool['name']}: {tool.get('description', 'No description')}")
-
     print("\n\n\nMessages:")
     for i, message in enumerate(messages):
         print(f"  Message {i+1} ({message['role']}):")
@@ -335,11 +332,11 @@ def generate_axtree_diff(previous_axtree: str | None, current_axtree: str, chang
     
     return f"Page state changes:\n{diff_text}"
 
-def purge_old_tags(conversation_history: list[MessageParam], iterations_to_keep: int = 5) -> list[MessageParam]:
+def purge_old_tags(conversation_history: list[MessageParam], iterations_to_keep: int = 5, current_has_reset: bool = False) -> list[MessageParam]:
     """
     Replace goal and important tags older than specified iterations with placeholder text.
     Remove old images to prevent memory bloat.
-    Only replace state tags if we've had a full page reset (full_reset=True).
+    Only replace state tags if we've had a full page reset (full_reset=True) or current_has_reset=True.
     """
     # Count assistant messages (iterations) from the end
     assistant_count = 0
@@ -352,24 +349,25 @@ def purge_old_tags(conversation_history: list[MessageParam], iterations_to_keep:
                 cutoff_index = i
                 break
     
-    # Check if we have a full reset state tag in recent messages
-    has_full_reset = False
-    for i in range(cutoff_index, len(conversation_history)):
-        message = conversation_history[i]
-        if message.get('role') == 'user' and isinstance(message.get('content'), list):
-            for block in message['content']:
-                if hasattr(block, 'type') and block.type == 'text':
-                    text = getattr(block, 'text', '')
-                elif isinstance(block, dict) and block.get('type') == 'text':
-                    text = block.get('text', '')
-                else:
-                    continue
-                
-                if '<state full_reset=True>' in text:
-                    has_full_reset = True
+    # Check if we have a full reset state tag in recent messages OR current iteration has reset
+    has_full_reset = current_has_reset
+    if not has_full_reset:
+        for i in range(cutoff_index, len(conversation_history)):
+            message = conversation_history[i]
+            if message.get('role') == 'user' and isinstance(message.get('content'), list):
+                for block in message['content']:
+                    if hasattr(block, 'type') and block.type == 'text':
+                        text = getattr(block, 'text', '')
+                    elif isinstance(block, dict) and block.get('type') == 'text':
+                        text = block.get('text', '')
+                    else:
+                        continue
+                    
+                    if '<state full_reset=True>' in text:
+                        has_full_reset = True
+                        break
+                if has_full_reset:
                     break
-            if has_full_reset:
-                break
     
     # Process messages
     purged_history = []
@@ -481,7 +479,7 @@ def purge_old_tags(conversation_history: list[MessageParam], iterations_to_keep:
             purged_history.append(message)
     
     return purged_history
-    
+
 class GTAgent(Agent):
     def __init__(self) -> None:
         super().__init__()
@@ -493,14 +491,18 @@ class GTAgent(Agent):
             custom_actions=[refresh, take_screenshot],
             strict=False,
             multiaction=False,
-            demo_mode="off"
+            demo_mode="off",
+            # demo_mode="default",
         )
         
         self.client = anthropic.Anthropic()
         self.conversation_history: list[MessageParam] = []
         self.previous_axtree: str | None = None
+        self.iteration_count = 0
 
     def query_model(self, obs: Any) -> tuple[str, ContentBlock | None, MessageParam]:
+        self.iteration_count += 1
+    
         # Handle last tool's result
         if self.conversation_history:
             last_message = self.conversation_history[-1]
@@ -565,19 +567,19 @@ class GTAgent(Agent):
                         }
                     
                     self.conversation_history.append(tool_result)
-
+    
         # Generate diff instead of full state
         axtree_info = generate_axtree_diff(self.previous_axtree, obs['axtree_txt'])
         is_full_reset = "Major page change detected" in axtree_info or "Initial state:" in axtree_info
         self.previous_axtree = obs['axtree_txt']
         state_tag = f"<state full_reset={is_full_reset}>{axtree_info}</state>"
         
-        self.conversation_history = purge_old_tags(self.conversation_history, iterations_to_keep=5)
-        
-        # Create current message
-        current_message = f"""\
-<goal>{obs['goal']}</goal>
-{state_tag}
+        # Pass the current reset flag to purge_old_tags
+        self.conversation_history = purge_old_tags(self.conversation_history, iterations_to_keep=5, current_has_reset=is_full_reset)
+    
+        important_section = ""
+        if self.iteration_count % 3 == 1:
+            important_section = """\
 <important>
 Remember:
 - double check your work before proceeding,
@@ -602,8 +604,13 @@ Remember:
 
 Finally, and perhaps the most importantly, if you need to remember something, write it into your response (either thinking or user response).
 This is important because page state is removed over time to save context space, so if you need to remember URLs for example, write them down and you can use them in a goto() later.
-
-</important>
+</important>"""
+    
+        # Create current message
+        current_message = f"""\
+<goal>{obs['goal']}</goal>
+{state_tag}
+{important_section}
 """
         user_message: MessageParam = {
             "role": "user",
@@ -614,7 +621,7 @@ This is important because page state is removed over time to save context space,
             tool for tool in TOOLS 
             if tool["name"] in self.action_set.action_set.keys()  # pyright: ignore
         ]
-
+    
         response = self.client.messages.create(
             model="claude-sonnet-4-20250514",
             max_tokens=20000,
@@ -623,7 +630,11 @@ This is important because page state is removed over time to save context space,
                 "type": "enabled",
                 "budget_tokens": 10000
             },
-            system=INSTRUCTIONS,
+            system=[{
+                "type": "text",
+                "text": INSTRUCTIONS,
+                "cache_control": {"type": "ephemeral"}
+            }],
             messages=messages,
             tool_choice={"type": "auto"},
             tools=available_tools # pyright: ignore
@@ -636,14 +647,14 @@ This is important because page state is removed over time to save context space,
             "content": response.content
         }
         messages.append(response_blocks)
-
+    
         print_context(available_tools, messages)
         save_history_to_txt(self.agent_id, messages)
         
         self.conversation_history = messages
-
+    
         thinking_block = next(filter(lambda block: block.type == "thinking", response.content), None)
-
+    
         return action, thinking_block, response_blocks
         
     def obs_preprocessor(self, obs: dict) -> Any:
@@ -683,11 +694,14 @@ if __name__ == "__main__":
     
     harness = REAL.harness(
         agentargs=agent_args,
-        task_name="webclones.fly-unified-13",
         headless=False,
-        max_steps=999,
-        leaderboard=False,
+        max_steps=120,
+        leaderboard=True,
         run_id="KISS-1",
+        # results_dir="demo_results",
+        cache_only=True
     )
+    
+    # harness.env_args["record_video"] = True
 
     results = harness.run()

@@ -420,6 +420,7 @@ TOOLS = [
             "type": "object",
             "properties": {},
             "required": []
-        }
+        },
+        "cache_control": {"type": "ephemeral"}
     },
 ]

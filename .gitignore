@@ -25,3 +25,4 @@ results
 logs/
 
 !results_KISS-1/**
+.DS_Store
